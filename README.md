@@ -1,7 +1,6 @@
-![Logo of the project](https://github.com/tuguScript/oluulaa/blob/master/src/images/oluulaa-logo.jpg)
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://github.com/tuguScript/oluulaa/blob/master/src/images/oluulaa-logo.jpg" width="60" />
+  <a href="https://www.oluulaa.io">
+    <img alt="Gatsby" src="https://github.com/tuguScript/oluulaa/blob/master/src/images/oluulaa-logo.jpg" width="100" />
   </a>
 </p>
 
@@ -13,7 +12,7 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
 Манай serverless stack ...
 
 
-## 🚀 локал компьютер дээр ажилуулах / Getting started
+## 🚀 локал компьютер дээр ажилуулах
 
 1.  **Татаж авах**
 
@@ -23,7 +22,7 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
     git clone git@github.com:tuguScript/oluulaa.git
     ```
 
-1.  **Start developing.**
+1.  **Хөгжүүлэлт хийх**
 
     Navigate into your new site’s directory and start it up.
 
@@ -32,11 +31,142 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
     gatsby develop
     ```
 
-Here you should say what actually happens when you execute the code above.
+### 1.1 Git дүрэмүүд
+Хамтран хөгжүүлэлт хийх явцад анхаарах дүрэмүүд
+* Кодоо зөвхөн feature branch - д бич.
+    
+    Яагаад:_
+    >Ингэснээр бүх код гол мөчирөөс тусдаанаа өөр мөчир дээр бичигдэх ба гол мөчир дээрх кодтой зөрчилдөөнгүйгээр pull request үүд хийх боломжтой болох юм. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
 
-## Developing
+* `develop` мөчирөөс салаалах    
+    Яагаад:_
+    >Ингэснээр, master мөчир дээрх код үргэлж амжилттай build хийгдэж байх нөхцөл бүрдэх ба master мөчир шууд сервэр (production) дээр ажиллаж болно.
 
-### Built With
+* Битгий `develop` эсвэл `master` branch руу push хийгээрэй. Make a Pull Request.
+    
+    Яагаад:_
+    > Ингэснээр тухайн feature - н кодыг peer-review хийх болон багийн гишүүд forum дээр feature - н тухай харилцан, зөвлөлдөх боломжыг олгоно.
+
+* feature мөчир дээрх кодоо push хийж, pull request хийхээсээ өмнө локал develop мөчирөө шинэчлэсний дараа interactive rebase хийгээрэй
+
+    Яагаад:_
+    >  Rebase хийх нь мөчир (`master` or `develop`) рүү нийлэх ба локал commit-уудын түүхийг нийлж байгаа мөчирийн ард нь нийлүүлнэ. Ингэснээр цэгцтэй, цэвэрхан commit түүхүүд бүрдэх юм. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+* Pull Request хийхээсээ өмнө, rebase хийх үед ямар нэгэн кодны зөрчил байхгүй байх хэрэгтэй
+* merge хийгдсэний дараа remote болон локал feature мөчирүүдээ устгаж болно.
+    
+    Яагаад:_
+    > ашиглагдахгүй байгаа branch ууд замбараагүй байдал үүсгэхээс сэргийлнэ. It ensures you only ever merge the branch back into (`master` or `develop`) once. Feature branches should only exist while the work is still in progress.
+
+* Pull Request хийхээсээ өмнө, чиний feature branch дээрх код амжилттай build хийгдэж байх ёстой ба бүх тестчиллийн кодыг (хэрэв байвал) pass хийж байх ёстой
+    
+    Яагаад:_
+    > Чиний код асуудагүй ажилладаг мөчир лүү нийлэх гэж байгаа учир бүх код амжилттай ажиллаж байх ёстой. Мөн кодны форматчилал, амархан уншиж болох боломжыг бүрдүүлэхийг хичээгээрэй. 
+
+* `master` branch хамгаалагдсан ба merge хийгдэхээс өмнө  pull request reviews шаардана
+  
+
+<a name="git-workflow"></a>
+### 1.2 Git workflow
+Because of most of the reasons above, we use [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) with [Interactive Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) and some elements of [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) (naming and having a develop branch). The main steps are as follows:
+
+* For a new project, initialize a git repository in the project directory. __For subsequent features/changes this step should be ignored__.
+   ```sh
+   cd <project directory>
+   git init
+   ```
+
+* Checkout a new feature/bug-fix branch.
+    ```sh
+    git checkout -b <branchname>
+    ```
+* Make Changes.
+    ```sh
+    git add <file1> <file2> ...
+    git commit
+    ```
+    _Why:_
+    > `git add <file1> <file2> ... ` - you should add only files that make up a small and coherent change.
+    
+    > `git commit` will start an editor which lets you separate the subject from the body. 
+    
+    > Read more about it in *section 1.3*.
+    
+    _Tip:_
+    > You could use `git add -p` instead, which will give you chance to review all of the introduced changes one by one, and decide whether to include them in the commit or not.
+
+* Sync with remote to get changes you’ve missed.
+    ```sh
+    git checkout develop
+    git pull
+    ```
+    
+    _Why:_
+    > This will give you a chance to deal with conflicts on your machine while rebasing (later) rather than creating a Pull Request that contains conflicts.
+    
+* Update your feature branch with latest changes from develop by interactive rebase.
+    ```sh
+    git checkout <branchname>
+    git rebase -i --autosquash develop
+    ```
+    
+    _Why:_
+    > You can use --autosquash to squash all your commits to a single commit. Nobody wants many commits for a single feature in develop branch. [read more...](https://robots.thoughtbot.com/autosquashing-git-commits)
+    
+* If you don’t have conflicts, skip this step. If you have conflicts, [resolve them](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)  and continue rebase.
+    ```sh
+    git add <file1> <file2> ...
+    git rebase --continue
+    ```
+* Push your branch. Rebase will change history, so you'll have to use `-f` to force changes into the remote branch. If someone else is working on your branch, use the less destructive `--force-with-lease`.
+    ```sh
+    git push -f
+    ```
+    
+    _Why:_
+    > When you do a rebase, you are changing the history on your feature branch. As a result, Git will reject normal `git push`. Instead, you'll need to use the -f or --force flag. [read more...](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
+    
+    
+* Make a Pull Request.
+* Pull request will be accepted, merged and close by a reviewer.
+* Remove your local feature branch if you're done.
+
+  ```sh
+  git branch -d <branchname>
+  ```
+  to remove all branches which are no longer on remote
+  ```sh
+  git fetch -p && for branch in `git branch -vv --no-color | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+  ```
+
+<a name="writing-good-commit-messages"></a>
+### 1.3 Writing good commit messages
+
+Having a good guideline for creating commits and sticking to it makes working with Git and collaborating with others a lot easier. Here are some rules of thumb ([source](https://chris.beams.io/posts/git-commit/#seven-rules)):
+
+ * Separate the subject from the body with a newline between the two.
+
+    _Why:_
+    > Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try git shortlog, instead of git log, you will see a long list of commit messages, consisting of the id of the commit, and the summary only.
+
+ * Limit the subject line to 50 characters and Wrap the body at 72 characters.
+
+    _why_
+    > Commits should be as fine-grained and focused as possible, it is not the place to be verbose. [read more...](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c)
+
+ * Capitalize the subject line.
+ * Do not end the subject line with a period.
+ * Use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) in the subject line.
+
+    _Why:_
+    > Rather than writing messages that say what a committer has done. It's better to consider these messages as the instructions for what is going to be done after the commit is applied on the repository. [read more...](https://news.ycombinator.com/item?id=2079612)
+
+
+ * Use the body to explain **what** and **why** as opposed to **how**.
+
+ <a name="documentation"></a>
+
+### 1.4 Built With
 - React
 - GatsbyJS
 - Material Design
@@ -45,7 +175,7 @@ Here you should say what actually happens when you execute the code above.
 - Webpack
 
 
-### Deploying / Publishing
+### 1.5  Deploying / Publishing
 master branch руу нийлсэн бүхэн сервэр лүү build хийгдэх болно
 
 ## Style guide
