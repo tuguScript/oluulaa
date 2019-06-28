@@ -12,7 +12,7 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
 Манай serverless stack ...
 
 
-## 🚀 локал компьютер дээр ажилуулах
+## 1. 🚀 локал компьютер дээр ажилуулах
 
 1.  **Татаж авах**
 
@@ -24,7 +24,7 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
 
 1.  **Хөгжүүлэлт хийх**
 
-    Navigate into your new site’s directory and start it up.
+    Directory - доо ороод, эхлүүлэх комманд аа өгөөрөй
 
     ```sh
     cd oluulaa/
@@ -36,7 +36,7 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
 * Кодоо зөвхөн feature branch - д бич.
     
     Яагаад:_
-    >Ингэснээр бүх код гол мөчирөөс тусдаанаа өөр мөчир дээр бичигдэх ба гол мөчир дээрх кодтой зөрчилдөөнгүйгээр pull request үүд хийх боломжтой болох юм. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
+    >Ингэснээр бүх код гол мөчирөөс тусдаанаа өөр мөчир дээр бичигдэх ба гол мөчир дээрх кодтой зөрчилдөөнгүйгээр pull request үүд хийх боломжтой болох юм. [Дэлгэрэнгүй судлах](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
 
 * `develop` мөчирөөс салаалах    
     Яагаад:_
@@ -68,30 +68,17 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
 
 <a name="git-workflow"></a>
 ### 1.2 Git workflow
-Because of most of the reasons above, we use [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) with [Interactive Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) and some elements of [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) (naming and having a develop branch). The main steps are as follows:
-
-* For a new project, initialize a git repository in the project directory. __For subsequent features/changes this step should be ignored__.
-   ```sh
-   cd <project directory>
-   git init
-   ```
+Хамтран ажиллах дүрэмүүд [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) болон [Interactive Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) болон  [Gitflow] ийн зарим аргууд (https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) (naming and having a develop branch). Гол алхамууд:
 
 * Checkout a new feature/bug-fix branch.
     ```sh
     git checkout -b <branchname>
     ```
-* Make Changes.
+* Өөрчилөлт хийх.
     ```sh
     git add <file1> <file2> ...
     git commit
     ```
-    _Why:_
-    > `git add <file1> <file2> ... ` - you should add only files that make up a small and coherent change.
-    
-    > `git commit` will start an editor which lets you separate the subject from the body. 
-    
-    > Read more about it in *section 1.3*.
-    
     _Tip:_
     > You could use `git add -p` instead, which will give you chance to review all of the introduced changes one by one, and decide whether to include them in the commit or not.
 
@@ -101,34 +88,34 @@ Because of most of the reasons above, we use [Feature-branch-workflow](https://w
     git pull
     ```
     
-    _Why:_
-    > This will give you a chance to deal with conflicts on your machine while rebasing (later) rather than creating a Pull Request that contains conflicts.
+    Яагаад:_
+    > Ингэснээр кодны зөрчилтөй локал аар засах боломжтой болно.
     
-* Update your feature branch with latest changes from develop by interactive rebase.
+* feature мөчирөө develop мөчирийн хамгийн сүүлийн өөрчлөлтүүдтэй interactive rebase хийж шинэчлээрэй.
     ```sh
     git checkout <branchname>
     git rebase -i --autosquash develop
     ```
     
-    _Why:_
-    > You can use --autosquash to squash all your commits to a single commit. Nobody wants many commits for a single feature in develop branch. [read more...](https://robots.thoughtbot.com/autosquashing-git-commits)
+    Яагаад:_
+    > You can use --autosquash to squash all your commits to a single commit. Nobody wants many commits for a single feature in develop branch. [Дэлгэрэнгүй судлах](https://robots.thoughtbot.com/autosquashing-git-commits)
     
-* If you don’t have conflicts, skip this step. If you have conflicts, [resolve them](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)  and continue rebase.
+* Кодны зөрчил байхгүй бол үүнийг алгасаарай. Зөрчил байгаа бол, [засаарай](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)  тэгээд rebase хийхээ үргэлжлүүлээрэй.
     ```sh
     git add <file1> <file2> ...
     git rebase --continue
     ```
-* Push your branch. Rebase will change history, so you'll have to use `-f` to force changes into the remote branch. If someone else is working on your branch, use the less destructive `--force-with-lease`.
+* Branch аа Push хийгээрэй. Rebase will change history, so you'll have to use `-f` to force changes into the remote branch. If someone else is working on your branch, use the less destructive `--force-with-lease`.
     ```sh
     git push -f
     ```
     
-    _Why:_
-    > When you do a rebase, you are changing the history on your feature branch. As a result, Git will reject normal `git push`. Instead, you'll need to use the -f or --force flag. [read more...](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
+    Яагаад:_
+    > When you do a rebase, you are changing the history on your feature branch. As a result, Git will reject normal `git push`. Instead, you'll need to use the -f or --force flag. [Дэлгэрэнгүй судлах](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
     
     
-* Make a Pull Request.
-* Pull request will be accepted, merged and close by a reviewer.
+* Pull Request хийгээрэй.
+* Pull request review хийж байгаа хүнээр зөвшөөрөгдөж, нийлүүлэгдэж and хаагдана.
 * Remove your local feature branch if you're done.
 
   ```sh
@@ -146,20 +133,20 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
  * Separate the subject from the body with a newline between the two.
 
-    _Why:_
+    Яагаад:_
     > Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try git shortlog, instead of git log, you will see a long list of commit messages, consisting of the id of the commit, and the summary only.
 
  * Limit the subject line to 50 characters and Wrap the body at 72 characters.
 
-    _why_
-    > Commits should be as fine-grained and focused as possible, it is not the place to be verbose. [read more...](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c)
+    Яагаад_
+    > Commits should be as fine-grained and focused as possible, it is not the place to be verbose. [Дэлгэрэнгүй судлах](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c)
 
  * Capitalize the subject line.
  * Do not end the subject line with a period.
  * Use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) in the subject line.
 
-    _Why:_
-    > Rather than writing messages that say what a committer has done. It's better to consider these messages as the instructions for what is going to be done after the commit is applied on the repository. [read more...](https://news.ycombinator.com/item?id=2079612)
+    Яагаад:_
+    > Rather than writing messages that say what a committer has done. It's better to consider these messages as the instructions for what is going to be done after the commit is applied on the repository. [Дэлгэрэнгүй судлах](https://news.ycombinator.com/item?id=2079612)
 
 
  * Use the body to explain **what** and **why** as opposed to **how**.
@@ -178,15 +165,15 @@ Having a good guideline for creating commits and sticking to it makes working wi
 ### 1.5  Deploying / Publishing
 master branch руу нийлсэн бүхэн сервэр лүү build хийгдэх болно
 
-## Style guide
+## 1.6 Style guide
 
 Explain your code style and show how to check it.
 
-## Api Reference
+## 1.7 Api Reference
 
 Хэрэв external api хэрэглэсэн тохиолдолд энд тайлбар, хэрхэн authenticate хйих гэх мэт мэдээллүүдийг бичнэ үү
 
-## 🧐 What's inside?
+## 1.8 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -227,7 +214,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 
-## 🎓 Learning Gatsby
+## 1.9 🎓 Gatsby - г сурах
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
@@ -235,25 +222,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
+## 1.10 Licensing
 
-
-## Database
-
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... 
-
-## Licensing
-
-MIT Нээлттэй
-
-
-
-
-
-
-
-
-
-
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Copyright © 2019 oluulaa.io
