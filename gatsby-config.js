@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Oluulaa.io`,
+    description: `Oluulaa (Олуулаа) is a collaborative platform with a mission to connect and invigorate the Mongolian community members. 
+    Support Mongolian interest groups by sharing their information. Connect young professionals through events that focus on personal and professional growth `,
+    author: `@oluulaa`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
