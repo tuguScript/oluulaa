@@ -35,33 +35,33 @@ oluulaa.io нь ... энд товч тайлбар байна. Манай хам
 Хамтран хөгжүүлэлт хийх явцад анхаарах дүрэмүүд
 * Кодоо зөвхөн feature branch - д бич.
     
-    _Why:_
-    >Because this way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
-* `develop` мөчирөөс салаалах
-    
-    _Why:_
-    >This way, you can make sure that code in master will almost always build without problems, and can be mostly used directly for releases (this might be overkill for some projects).
+    Яагаад:_
+    >Ингэснээр бүх код гол мөчирөөс тусдаанаа өөр мөчир дээр бичигдэх ба гол мөчир дээрх кодтой зөрчилдөөнгүйгээр pull request үүд хийх боломжтой болох юм. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
+
+* `develop` мөчирөөс салаалах    
+    Яагаад:_
+    >Ингэснээр, master мөчир дээрх код үргэлж амжилттай build хийгдэж байх нөхцөл бүрдэх ба master мөчир шууд сервэр (production) дээр ажиллаж болно.
 
 * Битгий `develop` эсвэл `master` branch руу push хийгээрэй. Make a Pull Request.
     
-    _Why:_
-    > It notifies team members that they have completed a feature. It also enables easy peer-review of the code and dedicates forum for discussing the proposed feature.
+    Яагаад:_
+    > Ингэснээр тухайн feature - н кодыг peer-review хийх болон багийн гишүүд forum дээр feature - н тухай харилцан, зөвлөлдөх боломжыг олгоно.
 
-* Update your local `develop` branch and do an interactive rebase before pushing your feature and making a Pull Request.
+* feature мөчир дээрх кодоо push хийж, pull request хийхээсээ өмнө локал develop мөчирөө шинэчлэсний дараа interactive rebase хийгээрэй
 
-    _Why:_
-    > Rebasing will merge in the requested branch (`master` or `develop`) and apply the commits that you have made locally to the top of the history without creating a merge commit (assuming there were no conflicts). Resulting in a nice and clean history. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+    Яагаад:_
+    >  Rebase хийх нь мөчир (`master` or `develop`) рүү нийлэх ба локал commit-уудын түүхийг нийлж байгаа мөчирийн ард нь нийлүүлнэ. Ингэснээр цэгцтэй, цэвэрхан commit түүхүүд бүрдэх юм. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
-* Resolve potential conflicts while rebasing and before making a Pull Request.
-* Delete local and remote feature branches after merging.
+* Pull Request хийхээсээ өмнө, rebase хийх үед ямар нэгэн кодны зөрчил байхгүй байх хэрэгтэй
+* merge хийгдсэний дараа remote болон локал feature мөчирүүдээ устгаж болно.
     
-    _Why:_
-    > It will clutter up your list of branches with dead branches. It ensures you only ever merge the branch back into (`master` or `develop`) once. Feature branches should only exist while the work is still in progress.
+    Яагаад:_
+    > ашиглагдахгүй байгаа branch ууд замбараагүй байдал үүсгэхээс сэргийлнэ. It ensures you only ever merge the branch back into (`master` or `develop`) once. Feature branches should only exist while the work is still in progress.
 
-* Before making a Pull Request, make sure your feature branch builds successfully and passes all tests (including code style checks).
+* Pull Request хийхээсээ өмнө, чиний feature branch дээрх код амжилттай build хийгдэж байх ёстой ба бүх тестчиллийн кодыг (хэрэв байвал) pass хийж байх ёстой
     
-    _Why:_
-    > You are about to add your code to a stable branch. If your feature-branch tests fail, there is a high chance that your destination branch build will fail too. Additionally, you need to apply code style check before making a Pull Request. It aids readability and reduces the chance of formatting fixes being mingled in with actual changes.
+    Яагаад:_
+    > Чиний код асуудагүй ажилладаг мөчир лүү нийлэх гэж байгаа учир бүх код амжилттай ажиллаж байх ёстой. Мөн кодны форматчилал, амархан уншиж болох боломжыг бүрдүүлэхийг хичээгээрэй. 
 
 * `master` branch хамгаалагдсан ба merge хийгдэхээс өмнө  pull request reviews шаардана
   
@@ -166,7 +166,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
  <a name="documentation"></a>
 
-### Built With
+### 1.4 Built With
 - React
 - GatsbyJS
 - Material Design
@@ -175,7 +175,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 - Webpack
 
 
-### Deploying / Publishing
+### 1.5  Deploying / Publishing
 master branch руу нийлсэн бүхэн сервэр лүү build хийгдэх болно
 
 ## Style guide
