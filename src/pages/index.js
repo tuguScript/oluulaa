@@ -16,7 +16,7 @@ import Banner3 from '../components/banner'
 import Content from '../components/content'
 import Teams from '../components/team'
 
-const { location } = window;
+const { location } = typeof window !== 'undefined' && window
 let isMobile;
 enquireScreen((b) => {
   isMobile = b;
@@ -27,7 +27,7 @@ export default class IndexPage extends React.Component {
     super(props);
     this.state = {
       isMobile,
-      show: !location.port,
+      show: typeof window !== `undefined` ? !location.port : null
     };
   }
   render() {

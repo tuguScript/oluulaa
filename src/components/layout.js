@@ -13,7 +13,12 @@ import Header from './header'
 import Footer from '../components/footer'
 import '../less/antMotionStyle.less'
 
-const { location } = window;
+
+
+if (typeof window !== `undefined`) {
+  const { location } = window;
+}
+
 let isMobile;
 enquireScreen((b) => {
   isMobile = b;
@@ -24,11 +29,13 @@ export default class Layout extends React.Component {
     super(props);
     this.state = {
       isMobile,
-      show: !location.port,
+      show: typeof window !== `undefined` ? !location.port : null,
     };
   }
 
   componentDidMount() {
+    console.log("windowGlobal", windowGlobal);
+
     enquireScreen((b) => {
       this.setState({ isMobile: !!b });
     });
