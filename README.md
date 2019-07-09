@@ -7,7 +7,7 @@
 # Oluulaa website &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 > Oluulaa gatsbyjs react javascript
 
-oluulaa.io нь ... энд товч тайлбар байна. Манай хамт олон хэд хэдэн арга хэмжээ, төсөлүүдийг амжилттай хийсэн ба бидний зорилго ...-д оршино.
+oluulaa.io -н веб сайт хөгжүүлэлтийн github repo.
 
 Манай serverless stack ...
 
