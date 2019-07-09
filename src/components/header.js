@@ -1,42 +1,100 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import TweenOne from 'rc-tween-one';
+import { Menu } from 'antd';
+import logo from '../images/oluulaa-logo.png'
+const Item = Menu.Item;
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      phoneOpen: false,
+      menuHeight: 0,
+    };
+    this.menu = React.createRef();
+  }
+
+  /*
+  componentDidMount() {
+    this.menuDom = findDOMNode(this.menu);
+  }
+  */
+
+  phoneClick = () => {
+    const phoneOpen = !this.state.phoneOpen;
+    this.setState({
+      phoneOpen,
+      menuHeight: phoneOpen ? this.menu.current.dom.scrollHeight : 0,
+    });
+  };
+
+  render() {
+    const { ...props } = this.props;
+    const { dataSource, isMobile } = props;
+    delete props.dataSource;
+    delete props.isMobile;
+    const { menuHeight, phoneOpen } = this.state;
+    const navData = dataSource.Menu.children;
+    const navChildren = Object.keys(navData).map((key, i) => (
+      <Item key={i.toString()} {...navData[key]}>
+        <a
+          {...navData[key].a}
+          href={navData[key].a.href}
+          target={navData[key].a.target}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+          {navData[key].a.children}
+        </a>
+      </Item>
+    ));
+    return (
+      <TweenOne
+        component="header"
+        animation={{ opacity: 0, type: 'from' }}
+        {...dataSource.wrapper}
+        {...props}
+      >
+        <div
+          {...dataSource.page}
+          className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
+        >
+          <TweenOne
+            animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
+            {...dataSource.logo}
+          >
+            <a href="/">
+              <img width="100%" src={logo} alt="img" style={{ marginBottom: '0px', height: '51px', width: '51px' }} />
+            </a>
+          </TweenOne>
+          {isMobile && (
+            <div
+              {...dataSource.mobileMenu}
+              onClick={() => {
+                this.phoneClick();
+              }}
+            >
+              <em />
+              <em />
+              <em />
+            </div>
+          )}
+          <TweenOne
+            {...dataSource.Menu}
+            animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
+            ref={this.menu} // {(c) => { this.menu = c; }}
+            style={isMobile ? { height: menuHeight } : null}
+          >
+            <Menu
+              mode={isMobile ? 'inline' : 'horizontal'}
+              defaultSelectedKeys={['0']}
+              theme={isMobile ? 'dark' : 'default'}
+            >
+              {navChildren}
+            </Menu>
+          </TweenOne>
+        </div>
+      </TweenOne>
+    );
+  }
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

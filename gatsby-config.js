@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Oluulaa.io`,
-    description: `Oluulaa (Олуулаа) is a collaborative platform with a mission to connect and invigorate the Mongolian community members. 
-    Support Mongolian interest groups by sharing their information. Connect young professionals through events that focus on personal and professional growth `,
-    author: `@oluulaa`,
+    title: `Олуулаа | Oluulaa`,
+    description: `Олуулаа | Oluulaa is a collaborative platform with a mission to connect and invigorate the Mongolian community members.`,
+    author: `@tuguscript`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +26,18 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        javascriptEnabled: true
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
