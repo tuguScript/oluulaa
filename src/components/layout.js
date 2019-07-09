@@ -34,8 +34,6 @@ export default class Layout extends React.Component {
   }
 
   componentDidMount() {
-    console.log("windowGlobal", windowGlobal);
-
     enquireScreen((b) => {
       this.setState({ isMobile: !!b });
     });
