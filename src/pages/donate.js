@@ -33,25 +33,8 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="oluulaa.io" />
-        <Banner3
-          id="Banner3_0"
-          key="Banner3_0"
-          dataSource={Banner30DataSource}
-          isMobile={this.state.isMobile}
-        />
-        <Content
-          id="Content11_0"
-          key="Content11_0"
-          dataSource={Content110DataSource}
-          isMobile={this.state.isMobile}
-        />
-        <Teams
-          id="Teams2_0"
-          key="Teams2_0"
-          dataSource={Teams20DataSource}
-          isMobile={this.state.isMobile}
-        />
+        <SEO title="donate" />
+        <h1>Donate</h1>
       </Layout>
     )
   }

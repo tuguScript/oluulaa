@@ -1,52 +1,72 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 import "./layout.css"
+import {
+  Nav00DataSource,
+  Banner30DataSource,
+  Content110DataSource,
+  Teams20DataSource,
+  Footer10DataSource,
+} from '../utils/data.source';
+import { enquireScreen } from 'enquire-js';
+import Header from './header'
+import Footer from '../components/footer'
+import '../less/antMotionStyle.less'
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
+const { location } = window;
+let isMobile;
+enquireScreen((b) => {
+  isMobile = b;
+});
+
+export default class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMobile,
+      show: !location.port,
+    };
+  }
+
+  componentDidMount() {
+    enquireScreen((b) => {
+      this.setState({ isMobile: !!b });
+    });
+    if (location.port) {
+      setTimeout(() => {
+        this.setState({
+          show: true,
+        });
+      }, 500);
     }
-  `)
+  }
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+  render() {
+    const children = (
+      <div>
+        <Header id="Nav0_0"
+          key="Nav0_0"
+          dataSource={Nav00DataSource}
+          isMobile={this.state.isMobile} />
+        {this.props.children}
+        <Footer
+          id="Footer1_0"
+          key="Footer1_0"
+          dataSource={Footer10DataSource}
+          isMobile={this.state.isMobile}
+        />
       </div>
-    </>
-  )
+    )
+    return (
+      <div>
+        {this.state.show && children}
+        {/* <Home /> */}
+      </div>
+    )
+  }
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
