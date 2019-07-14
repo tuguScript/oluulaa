@@ -1,5 +1,14 @@
 import React from 'react';
 
+export function changeNavDataToMongolian() {
+  console.log('change language');
+  Nav00DataSource.Menu.children[0].a.children = "Хандив"
+  Nav00DataSource.Menu.children[1].a.children = "Блог"
+  Nav00DataSource.Menu.children[2].a.children = "Холбогдох"
+  console.log(Nav00DataSource);
+
+}
+
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper' },
   page: { className: 'home-page' },

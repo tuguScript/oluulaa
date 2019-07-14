@@ -7,6 +7,7 @@ import {
   Content110DataSource,
   Teams20DataSource,
   Footer10DataSource,
+  changeNavDataToMongolian
 } from '../utils/data.source';
 import { enquireScreen } from 'enquire-js';
 import Header from './header'
@@ -29,7 +30,7 @@ export default class Layout extends React.Component {
     super(props);
     this.state = {
       isMobile,
-      show: typeof window !== `undefined` ? !location.port : null,
+      show: typeof window !== `undefined` ? !window.location.port : null,
     };
   }
 
@@ -37,7 +38,7 @@ export default class Layout extends React.Component {
     enquireScreen((b) => {
       this.setState({ isMobile: !!b });
     });
-    if (location.port) {
+    if (window.location.port) {
       setTimeout(() => {
         this.setState({
           show: true,
@@ -46,9 +47,15 @@ export default class Layout extends React.Component {
     }
   }
 
+  changeLanguage() {
+    changeNavDataToMongolian()
+    this.forceUpdate()
+  }
+
   render() {
     const children = (
       <div>
+        <button onClick={() => this.changeLanguage()}>change Language</button>
         <Header id="Nav0_0"
           key="Nav0_0"
           dataSource={Nav00DataSource}
