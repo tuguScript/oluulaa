@@ -29,7 +29,7 @@ export default class Layout extends React.Component {
     super(props);
     this.state = {
       isMobile,
-      show: typeof window !== `undefined` ? !window.location.port : null,
+      show: typeof window !== `undefined` ? !location.port : null,
     };
   }
 
@@ -37,7 +37,7 @@ export default class Layout extends React.Component {
     enquireScreen((b) => {
       this.setState({ isMobile: !!b });
     });
-    if (window.location.port) {
+    if (location.port) {
       setTimeout(() => {
         this.setState({
           show: true,
