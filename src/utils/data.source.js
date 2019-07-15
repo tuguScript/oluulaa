@@ -78,7 +78,7 @@ export const Content110DataSource = {
         name: 'title',
         children: (
           <>
-            <p>Meet&nbsp;Inspiring&nbsp;Professionals</p>
+            <p>About&nbsp;Us&nbsp;</p>
           </>
         ),
         className: 'title-h1',
@@ -88,8 +88,7 @@ export const Content110DataSource = {
         children: (
           <>
             <p>
-              We’re building a global work-minded friend-zone. And for once,
-              you’d be glad to be in it!
+              Oluulaa is a collaborative platform with a mission to connect and invigorate the Mongolian community members.
             </p>
           </>
         ),
@@ -99,14 +98,14 @@ export const Content110DataSource = {
         name: 'content2',
         children: (
           <>
-            <p>The Better Way To Network</p>
+            <p>We are focusing on connect young professionals through events that focus on personal and professional growth!</p>
           </>
         ),
         className: 'title-content',
       },
     ],
   },
-  button: {
+  buttons: [{
     className: '',
     children: {
       a: {
@@ -114,12 +113,40 @@ export const Content110DataSource = {
         href: '#',
         children: (
           <>
-            <p>Get In the zone</p>
+            <p>Events</p>
           </>
         ),
       },
     },
   },
+  {
+    className: '',
+    children: {
+      a: {
+        className: 'button',
+        href: '#',
+        children: (
+          <>
+            <p>Mentorship</p>
+          </>
+        ),
+      },
+    },
+  },
+  {
+    className: '',
+    children: {
+      a: {
+        className: 'button',
+        href: '#',
+        children: (
+          <>
+            <p>How we're run</p>
+          </>
+        ),
+      },
+    },
+  },]
 };
 export const Teams20DataSource = {
   wrapper: { className: 'home-page-wrapper teams2-wrapper' },
