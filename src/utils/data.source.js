@@ -453,7 +453,7 @@ export const Footer10DataSource = {
           className: 'slogan',
           children: (
             <>
-              <p>Minim nulla culpa anim dolor voluptate Lorem est cillum fugiat minim.</p>
+              <p>Build your network</p>
             </>
           ),
         },
@@ -474,10 +474,9 @@ export const Footer10DataSource = {
           children: (
             <>
               <p>
-                {' '}
-                <a href="#">C</a>ontact Us
-              </p>{' '}
-              <p>FAQ</p> <p>How We're Run</p> <p>Donate</p>
+                History
+              </p>
+              <p>How we run</p> <p>Events</p> <p>Mentorship</p>
             </>
           ),
         },
@@ -490,14 +489,14 @@ export const Footer10DataSource = {
         title: {
           children: (
             <>
-              <p>Latest</p>
+              <p>Contact us</p>
             </>
           ),
         },
         content: {
           children: (
             <>
-              <p>Blog</p> <p>Events</p>
+              <p>Facebook</p> <p>Instagram</p> <p>Messenger</p><p>Linkedin</p>
             </>
           ),
         },
@@ -510,14 +509,14 @@ export const Footer10DataSource = {
         title: {
           children: (
             <>
-              <p>Work with Us</p>
+              <p>Get involved</p>
             </>
           ),
         },
         content: {
           children: (
             <>
-              <p>Join</p>
+              <p>Join Us</p><p>Apply for mentorship</p><p>Donate</p><p><a href="https://github.com/tuguScript/oluulaa/issues">Report an Issue</a></p>
             </>
           ),
         },
