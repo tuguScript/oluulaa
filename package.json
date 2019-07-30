@@ -17,6 +17,7 @@
     "gatsby-source-filesystem": "^2.1.0",
     "gatsby-transformer-sharp": "^2.2.0",
     "less": "^3.9.0",
+    "netlify-cms": "^2.9.7",
     "prop-types": "^15.7.2",
     "rc-banner-anim": "^2.2.8",
     "rc-queue-anim": "^1.6.12",
