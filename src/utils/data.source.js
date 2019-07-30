@@ -9,8 +9,11 @@ export const Nav00DataSource = {
   Menu: {
     className: 'header0-menu',
     children: [
-      { name: 'item3', a: { children: 'Donate', href: 'donate' } },
+      { name: 'item3', a: { children: 'About', href: 'about' } },
+      { name: 'item0', a: { children: 'Events', href: 'events' } },
+      { name: 'item2', a: { children: 'Mentorship', href: 'mentorship' } },
       { name: 'item0', a: { children: 'Blog', href: 'blog' } },
+      { name: 'item3', a: { children: 'Donate', href: 'donate' } },
       { name: 'item2', a: { children: 'Contact', href: 'contact' } },
     ],
   },
