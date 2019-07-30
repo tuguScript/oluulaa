@@ -426,7 +426,7 @@ export const Footer10DataSource = {
           className: 'slogan',
           children: (
             <>
-              <p>Minim nulla culpa anim dolor voluptate Lorem est cillum fugiat minim.</p>
+              <p>Build your network</p>
             </>
           ),
         },
