@@ -4,8 +4,11 @@ title: What is Lorem Ipsum?
 date: 2019-07-31T01:24:30.161Z
 thumbnail: /img/zswyzloitgeawdssxdzd.svg
 rating: 2
+path: /blog/what-is-lorem-ipsum
 ---
 
+
+lalalal
 
 What is Lorem Ipsum?
 
