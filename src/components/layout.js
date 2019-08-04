@@ -13,12 +13,14 @@ import Header from "./header"
 import Footer from "../components/footer"
 import "../less/antMotionStyle.less"
 
-const { location } = window
+if (typeof window !== `undefined`) {
+  const { location } = window;
+}
 
-let isMobile
-enquireScreen(b => {
-  isMobile = b
-})
+let isMobile;
+enquireScreen((b) => {
+  isMobile = b;
+});
 
 export default class Layout extends React.Component {
   constructor(props) {

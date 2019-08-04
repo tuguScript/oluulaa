@@ -15,7 +15,10 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              path
+              date(formatString: "MMMM DD, YYYY")
+              title
+              thumbnail
+              rating
             }
           }
         }
@@ -50,6 +53,7 @@ exports.createPages = ({ actions, graphql }) => {
       }
       const id = edge.node.id;
       createPage({
+        // path: edge.node.fields.slug,
         path: pathName,
         component,
         // additional data can be passed via context
