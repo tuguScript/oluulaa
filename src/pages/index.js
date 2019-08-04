@@ -34,24 +34,34 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="oluulaa.io" />
+        {/* TODO:  Banner (Sliding) */}
         <Banner3
           id="Banner3_0"
           key="Banner3_0"
           dataSource={Banner30DataSource}
           isMobile={this.state.isMobile}
         />
+        {/* About section*/}
         <Content
           id="Content11_0"
           key="Content11_0"
           dataSource={Content110DataSource}
           isMobile={this.state.isMobile}
         />
+        {/* TODO:  Events (card sliding) */}
+
+        {/* TODO:  introduce Mentorship program (3 sections)  */}
+
+
+
+
         <Teams
           id="Teams2_0"
           key="Teams2_0"
           dataSource={Teams20DataSource}
           isMobile={this.state.isMobile}
         />
+        {/* TODO: Donation */}
       </Layout>
     )
   }

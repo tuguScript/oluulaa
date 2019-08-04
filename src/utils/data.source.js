@@ -9,8 +9,11 @@ export const Nav00DataSource = {
   Menu: {
     className: 'header0-menu',
     children: [
-      { name: 'item3', a: { children: 'Donate', href: 'donate' } },
+      { name: 'item3', a: { children: 'About', href: 'about' } },
+      { name: 'item0', a: { children: 'Events', href: 'events' } },
+      { name: 'item2', a: { children: 'Mentorship', href: 'mentorship' } },
       { name: 'item0', a: { children: 'Blog', href: 'blog' } },
+      { name: 'item3', a: { children: 'Donate', href: 'donate' } },
       { name: 'item2', a: { children: 'Contact', href: 'contact' } },
     ],
   },
@@ -78,7 +81,7 @@ export const Content110DataSource = {
         name: 'title',
         children: (
           <>
-            <p>Meet&nbsp;Inspiring&nbsp;Professionals</p>
+            <p>About&nbsp;Us&nbsp;</p>
           </>
         ),
         className: 'title-h1',
@@ -88,8 +91,7 @@ export const Content110DataSource = {
         children: (
           <>
             <p>
-              We’re building a global work-minded friend-zone. And for once,
-              you’d be glad to be in it!
+              Oluulaa is a collaborative platform with a mission to connect and invigorate the Mongolian community members.
             </p>
           </>
         ),
@@ -99,14 +101,14 @@ export const Content110DataSource = {
         name: 'content2',
         children: (
           <>
-            <p>The Better Way To Network</p>
+            <p>We are focusing on connect young professionals through events that focus on personal and professional growth!</p>
           </>
         ),
         className: 'title-content',
       },
     ],
   },
-  button: {
+  buttons: [{
     className: '',
     children: {
       a: {
@@ -114,12 +116,40 @@ export const Content110DataSource = {
         href: '#',
         children: (
           <>
-            <p>Get In the zone</p>
+            <p>Events</p>
           </>
         ),
       },
     },
   },
+  {
+    className: '',
+    children: {
+      a: {
+        className: 'button',
+        href: '#',
+        children: (
+          <>
+            <p>Mentorship</p>
+          </>
+        ),
+      },
+    },
+  },
+  {
+    className: '',
+    children: {
+      a: {
+        className: 'button',
+        href: '#',
+        children: (
+          <>
+            <p>How we're run</p>
+          </>
+        ),
+      },
+    },
+  },]
 };
 export const Teams20DataSource = {
   wrapper: { className: 'home-page-wrapper teams2-wrapper' },
@@ -423,7 +453,7 @@ export const Footer10DataSource = {
           className: 'slogan',
           children: (
             <>
-              <p>Minim nulla culpa anim dolor voluptate Lorem est cillum fugiat minim.</p>
+              <p>Build your network</p>
             </>
           ),
         },
@@ -444,10 +474,9 @@ export const Footer10DataSource = {
           children: (
             <>
               <p>
-                {' '}
-                <a href="#">C</a>ontact Us
-              </p>{' '}
-              <p>FAQ</p> <p>How We're Run</p> <p>Donate</p>
+                History
+              </p>
+              <p>How we run</p> <p>Events</p> <p>Mentorship</p>
             </>
           ),
         },
@@ -460,14 +489,14 @@ export const Footer10DataSource = {
         title: {
           children: (
             <>
-              <p>Latest</p>
+              <p>Contact us</p>
             </>
           ),
         },
         content: {
           children: (
             <>
-              <p>Blog</p> <p>Events</p>
+              <p>Facebook</p> <p>Instagram</p> <p>Messenger</p><p>Linkedin</p>
             </>
           ),
         },
@@ -480,14 +509,14 @@ export const Footer10DataSource = {
         title: {
           children: (
             <>
-              <p>Work with Us</p>
+              <p>Get involved</p>
             </>
           ),
         },
         content: {
           children: (
             <>
-              <p>Join</p>
+              <p>Join Us</p><p>Apply for mentorship</p><p>Donate</p><p><a href="https://github.com/tuguScript/oluulaa/issues">Report an Issue</a></p>
             </>
           ),
         },
