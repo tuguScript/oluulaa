@@ -57,10 +57,15 @@ export const pageQuery = graphql`
         node {
           id
           excerpt(pruneLength: 250)
+          fields {
+            slug
+          }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            thumbnail
+            rating
           }
         }
       }
@@ -69,11 +74,17 @@ export const pageQuery = graphql`
 `
 
 class Card extends React.Component {
+  componentDidMount() {
+    console.log(this.props.post)
+  }
+
   render() {
-    const { excerpt, frontmatter } = this.props.post
+    const { excerpt, frontmatter, fields } = this.props.post
     return (
       <div>
-        <h2><a href={frontmatter.path}>{frontmatter.title}</a></h2>
+        <h2>
+          <a href={fields.slug}>{frontmatter.title}</a>
+        </h2>
         <p>{excerpt}</p>
       </div>
     )
