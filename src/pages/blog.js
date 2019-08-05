@@ -15,6 +15,7 @@ import { enquireScreen } from "enquire-js"
 import Banner3 from "../components/banner"
 import Content from "../components/content"
 import Teams from "../components/team"
+import CardWrapper from "../components/CardWrapper"
 
 const { location } = typeof window !== "undefined" && window
 let isMobile
@@ -38,13 +39,22 @@ export default class BlogPage extends React.Component {
 
   render() {
     const posts = this.props.data.allMarkdownRemark.edges.map(edge => (
-      <Card key={edge.node.id} post={edge.node} />
+      <CardWrapper key={edge.node.id} post={edge.node} />
     ))
     return (
       <Layout>
         <SEO title="Blog" />
-        <h1>hi</h1>
-        {posts}
+        <div className="overlay">
+          <div className="content">
+            <h3>Featured first Post Here</h3>
+          </div>
+        </div>
+        <div className="container">
+          <div className="column-1">
+            <h3 style={{ marginTop: "1.5em" }}>Latest posts</h3>
+          </div>
+          <div className="column-2">{posts}</div>
+        </div>
       </Layout>
     )
   }
@@ -61,7 +71,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")            
+            date(formatString: "MMMM DD, YYYY")
             title
             thumbnail
             rating
@@ -71,21 +81,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-class Card extends React.Component {
-  componentDidMount() {
-    console.log(this.props.post)
-  }
-
-  render() {
-    const { excerpt, frontmatter, fields } = this.props.post
-    return (
-      <div>
-        <h2>
-          <a href={fields.slug}>{frontmatter.title}</a>
-        </h2>
-        <p>{excerpt}</p>
-      </div>
-    )
-  }
-}
