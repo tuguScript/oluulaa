@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { Icon } from "antd"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -46,7 +46,14 @@ export default class BlogPage extends React.Component {
         <SEO title="Blog" />
         <div className="overlay">
           <div className="content">
-            <h3>Featured first Post Here</h3>
+            <p className="icons">
+              <a href="#"><Icon type="twitter" style={{ color: "white" }} /></a>
+              <a href="#"><Icon type="facebook" style={{ color: "white" }} /></a>
+              <a href="#"><Icon type="linkedin" style={{ color: "white" }} /></a>
+              <a href="#"><Icon type="link" style={{ color: "white" }} /></a>
+            </p>
+            <h1>Featured first Post Here</h1>
+            <p>By Tugi on Monday, 15 July 2019</p>
           </div>
         </div>
         <div className="container">
