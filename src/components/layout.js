@@ -14,9 +14,9 @@ import Footer from "../components/footer"
 import "../less/antMotionStyle.less"
 
 
-if (typeof window !== `undefined`) {
-  const { location } = window;
-}
+const { location } = window;
+// if (typeof window !== `undefined`) {
+// }
 
 let isMobile;
 enquireScreen((b) => {
