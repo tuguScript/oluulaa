@@ -5,6 +5,7 @@
     margin-top: 5em;
     margin-bottom: 1.5em;
     padding: 0em 3em;
+
     .column-1 {
         flex: 1
     }
@@ -14,10 +15,65 @@
     }
 }
 
-.blog-post {
-    margin: 0 auto;
-    max-width: 550px;
+.blog-post-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6em 0;
+    margin-bottom: 0px;
+
+    .column-1 {
+        flex: 1;
+
+        .author-card {
+            min-height: 250px;
+            max-width: 200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            a {
+                img {
+                    width: 108px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .blog-post {
+        flex: 3;
+        margin: 0 auto;
+        max-width: 550px;
+
+        p {
+            line-height: 1.5em;
+            font-size: 16px;
+        }
+
+        .date-social {
+            display: flex;
+            justify-content: space-between;
+
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                min-width: 5em;
+
+                a {
+                    color: inherit;
+                    text-decoration: none
+                }
+            }
+        }
+    }
+
+    .column-3 {
+        flex: 1;
+    }
 }
+
+
 
 .overlay {
     height: 600px;
@@ -67,6 +123,7 @@
     .overlay {
         height: 300px;
         padding: 4em 6em;
+
         .content {
             h1 {
                 font-size: 3.5rem;
@@ -77,18 +134,49 @@
     .container {
         padding: 0em 3em;
     }
+
+    .blog-post-container {
+        flex-direction: column-reverse;
+
+        .column-1 {
+            .author-card {
+                flex-direction: row;
+                min-width: 400px;
+                margin: 0px;
+            }
+        }
+
+        .blog-post {
+            max-width: 100%;
+            padding: 0em 4em;
+        }
+
+        .column-3 {
+            display: none;
+        }
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+    .blog-post-container {
+
+        .blog-post {
+            max-width: 100%;
+            padding: 0em 1em;
+        }
+    }
+
     .container {
         flex-direction: column;
         margin-top: 1em;
         padding: 0em 1.5em;
     }
+
     .overlay {
         height: 500px;
         padding: 4em 1em;
+
         .content {
             h1 {
                 font-size: 3.5rem;
