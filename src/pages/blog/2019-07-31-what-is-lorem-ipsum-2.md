@@ -3,7 +3,7 @@ layout: blog
 title: What is Lorem Ipsum? 2
 date: 2019-07-31T01:24:30.161Z
 thumbnail: /img/zswyzloitgeawdssxdzd.svg
-rating: 2
+author: Tugi
 ---
 
 

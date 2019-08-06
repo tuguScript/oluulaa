@@ -18,7 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
               date(formatString: "MMMM DD, YYYY")
               title
               thumbnail
-              rating
+              author
             }
           }
         }

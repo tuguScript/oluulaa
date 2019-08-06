@@ -33,27 +33,46 @@ export default class BlogPage extends React.Component {
     }
   }
   componentDidMount() {
-    console.log(this.posts)
+    console.log(this.props.data.allMarkdownRemark.edges[0])
     this.posts = this.props.data.allMarkdownRemark.edges
   }
 
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges.map(edge => (
-      <CardWrapper key={edge.node.id} post={edge.node} />
-    ))
+    const firstPost = this.props.data.allMarkdownRemark.edges[0].node
+      .frontmatter
+    const firstPostSlug = this.props.data.allMarkdownRemark.edges[0].node.fields
+      .slug
+    const posts = this.props.data.allMarkdownRemark.edges.map((edge, i) => {
+      if (i !== 0) {
+        return <CardWrapper key={edge.node.id} post={edge.node} />
+      }
+    })
     return (
       <Layout>
         <SEO title="Blog" />
         <div className="overlay">
           <div className="content">
             <p className="icons">
-              <a href="#"><Icon type="twitter" style={{ color: "white" }} /></a>
-              <a href="#"><Icon type="facebook" style={{ color: "white" }} /></a>
-              <a href="#"><Icon type="linkedin" style={{ color: "white" }} /></a>
-              <a href="#"><Icon type="link" style={{ color: "white" }} /></a>
+              <a href="#">
+                <Icon type="twitter" style={{ color: "white" }} />
+              </a>
+              <a href="#">
+                <Icon type="facebook" style={{ color: "white" }} />
+              </a>
+              <a href="#">
+                <Icon type="linkedin" style={{ color: "white" }} />
+              </a>
+              <a href="#">
+                <Icon type="link" style={{ color: "white" }} />
+              </a>
             </p>
-            <h1>Featured first Post Here</h1>
-            <p>By Tugi on Monday, 15 July 2019</p>
+
+            <a href={firstPostSlug}>
+              <h1>{firstPost.title}</h1>
+            </a>
+            <p>
+              By {firstPost.author} on {firstPost.date}
+            </p>
           </div>
         </div>
         <div className="container">
@@ -81,7 +100,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             thumbnail
-            rating
+            author
           }
         }
       }
