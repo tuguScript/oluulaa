@@ -15,6 +15,9 @@ export default class CardWrapper extends React.Component {
         <Card bordered={true} hoverable style={{ marginTop: "1.5em" }}>
           <h2 style={{ color: "rgba(0, 0, 0, 0.5)" }}>{frontmatter.title}</h2>
           <Meta description={excerpt} style={{ marginTop: "1em" }} />
+          <p style={{ color: "rgba(0, 0, 0, 0.5)", marginTop: "1.5em" }}>
+            By {frontmatter.author} on {frontmatter.date}
+          </p>
         </Card>
       </a>
     )
