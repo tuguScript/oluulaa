@@ -1,7 +1,7 @@
 ---
 templateKey: event
 title: Paths to University
-date: 2019-08-07T06:13:38.109Z
+date: 2019-04-07T06:00:00.000Z
 presenters:
   - name: Oluulaa
     text: >-
