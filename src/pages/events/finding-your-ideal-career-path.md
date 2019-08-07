@@ -40,8 +40,6 @@ location:
   mapsLink: >-
     https://www.google.com/maps/place/Genentech+Hall/@37.7674321,-122.3924247,15.6z/data=!4m5!3m4!1s0x808f7fcf22c08705:0xeaa83e6b468eddf1!8m2!3d37.7672548!4d-122.3923029
   mapsLongitude: -122.3924247
-  name: >-
-    UCSF Mission Bay, Genentech Hall Room N-114 660 16th St, San Francisco,
-    California 94158
+  name: UCSF Mission Bay
 ---
 
