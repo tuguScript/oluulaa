@@ -1,7 +1,7 @@
 ---
 templateKey: event
-title: Finding your ideal career path
-date: 2019-08-06T18:56:14.553Z
+title: Finding your ideal career path with Tess & Saraa
+date: 2019-08-03T17:30:00.000Z
 presenters:
   - image: /img/tess.jpg
     links:
@@ -18,6 +18,23 @@ presenters:
       Silicon Valley last 5 years at startup BloomReach and Google. Prior to
       that she also helped bankruptcy electron management company in Burlingame
       to set their daily operations. 
+  - image: /img/screen-shot-2019-08-06-at-11.22.24-pm.png
+    name: Saraa Batdorj
+    text: >-
+      She is a technical recruiter at Crystal Equation Corporation. She received
+      her bachelor's degree from the University of California, Berkeley in 2017,
+      majored in Environmental Economics & Policy. During her time at UC
+      Berkeley, she solely raised $150,000 to students programs, involved in two
+      environmental economics research, and graduated before your expected
+      graduation date. 
+
+
+      She is specialized in recruiting software engineers and AI data scientist
+      for startups to Forbes 500 companies in the USA. Additionally, she
+      volunteers at Mongolian IT Professional in the USA (MITPU) as a Director
+      of Referral Program where she helps Mongolian tech professionals to get
+      referred to tech companies. In her free time, she practices yoga and
+      standup comedy.
 location:
   mapsLatitude: 37.7674321
   mapsLink: >-
