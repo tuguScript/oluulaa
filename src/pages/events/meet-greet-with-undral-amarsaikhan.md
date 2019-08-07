@@ -4,7 +4,7 @@ title: Meet & Greet with Undral Amarsaikhan
 date: 2018-01-23T21:21:00.000Z
 presenters:
   - image: /img/screen-shot-2019-08-06-at-8.25.35-pm.png
-    name: ndral Amarsaikhan
+    name: Undral Amarsaikhan
     presentationTitle: co-founder of “Unread Media”
     text: >-
       Undral Amarsaikhan is the co-founder of “Unread Media”. Focusing on
