@@ -10,25 +10,26 @@ import {
   Content110DataSource,
   Teams20DataSource,
   Footer10DataSource,
-} from '../utils/data.source';
-import { enquireScreen } from 'enquire-js';
-import Banner3 from '../components/banner'
-import Content from '../components/content'
-import Teams from '../components/team'
+} from "../utils/data.source"
+import { enquireScreen } from "enquire-js"
+import Banner3 from "../components/banner"
+import Content from "../components/content"
+import Teams from "../components/team"
+import DonationSection from "../components/donationSection"
 
-const { location } = typeof window !== 'undefined' && window
-let isMobile;
-enquireScreen((b) => {
-  isMobile = b;
-});
+const { location } = typeof window !== "undefined" && window
+let isMobile
+enquireScreen(b => {
+  isMobile = b
+})
 
 export default class IndexPage extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       isMobile,
-      show: typeof window !== `undefined` ? !location.port : null
-    };
+      show: typeof window !== `undefined` ? !location.port : null,
+    }
   }
   render() {
     return (
@@ -52,16 +53,13 @@ export default class IndexPage extends React.Component {
 
         {/* TODO:  introduce Mentorship program (3 sections)  */}
 
-
-
-
         <Teams
           id="Teams2_0"
           key="Teams2_0"
           dataSource={Teams20DataSource}
           isMobile={this.state.isMobile}
         />
-        {/* TODO: Donation */}
+        <DonationSection />
       </Layout>
     )
   }
