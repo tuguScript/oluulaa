@@ -16,6 +16,21 @@ import Banner3 from "../components/banner"
 import Content from "../components/content"
 import Teams from "../components/team"
 import DonationSection from "../components/donationSection"
+import Event from "../components/Event"
+
+const fakeEventData = {
+  formattedDate: "August 3rd 2019 @ 5:30 PM",
+  location: {
+    name: "UCSF Mission Bay",
+    mapsLatitude: 37.7674321,
+    mapsLink:
+      "https://www.google.com/maps/place/Genentech+Hall/@…xeaa83e6b468eddf1!8m2!3d37.7672548!4d-122.3923029",
+    mapsLongitude: -122.3924247,
+  },
+  presenters: [],
+  rawDate: "2019-10-03T17:30:00.000Z",
+  title: "Finding your ideal career path with Tess & Sa",
+}
 
 const { location } = typeof window !== "undefined" && window
 let isMobile
@@ -24,6 +39,7 @@ enquireScreen(b => {
 })
 
 export default class IndexPage extends React.Component {
+  latestEvent
   constructor(props) {
     super(props)
     this.state = {
@@ -31,7 +47,9 @@ export default class IndexPage extends React.Component {
       show: typeof window !== `undefined` ? !location.port : null,
     }
   }
+
   render() {
+    this.latestEvent = this.props.data.allMarkdownRemark.edges[0].node.frontmatter
     return (
       <Layout>
         <SEO title="oluulaa.io" />
@@ -49,7 +67,10 @@ export default class IndexPage extends React.Component {
           dataSource={Content110DataSource}
           isMobile={this.state.isMobile}
         />
-        {/* TODO:  Events (card sliding) */}
+        {/* Upcoming Event */}
+        {new Date(this.latestEvent.rawDate).getTime() > new Date().getTime() ? (
+          <Event event={this.latestEvent} />
+        ) : null}
 
         {/* TODO:  introduce Mentorship program (3 sections)  */}
 
@@ -64,3 +85,40 @@ export default class IndexPage extends React.Component {
     )
   }
 }
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { presenters: { elemMatch: { text: { ne: null } } } }
+      }
+      sort: { order: DESC, fields: frontmatter___date }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            formattedDate: date(formatString: "MMMM Do YYYY @ h:mm A")
+            rawDate: date
+            presenters {
+              name
+              image
+              text
+              presentationTitle
+              links {
+                linkText
+                linkURL
+              }
+            }
+            location {
+              name
+              mapsLatitude
+              mapsLink
+              mapsLongitude
+            }
+          }
+        }
+      }
+    }
+  }
+`
