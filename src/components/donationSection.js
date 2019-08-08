@@ -10,6 +10,7 @@ class DonationSection extends React.PureComponent {
         <Button
           type="primary"
           className="donate-button"
+          target="_blank"
           href="https://venmo.com/Oluulaa-Oluulaa"
         >
           {"Support us"}

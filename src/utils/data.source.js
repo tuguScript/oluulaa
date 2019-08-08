@@ -54,6 +54,9 @@ export const Banner30DataSource = {
       {
         name: "button",
         className: "banner3-button",
+        href:
+          "https://docs.google.com/forms/d/1To-b0tkpPLRHCwyNPiT_SkVwD1mJUnGe-Vi1G8BpIvg",
+        target: "_blank",
         children: (
           <>
             <p>Apply Now</p>
