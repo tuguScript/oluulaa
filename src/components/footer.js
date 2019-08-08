@@ -1,21 +1,21 @@
-import React from 'react';
-import TweenOne from 'rc-tween-one';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import QueueAnim from 'rc-queue-anim';
-import { Row, Col } from 'antd';
-import { isImg } from '../utils/utils';
+import React from "react"
+import TweenOne from "rc-tween-one"
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack"
+import QueueAnim from "rc-queue-anim"
+import { Row, Col } from "antd"
+import { isImg } from "../utils/utils"
 
 class Footer extends React.Component {
   static defaultProps = {
-    className: 'footer1',
-  };
+    className: "footer1",
+  }
 
-  getLiChildren = (data) =>
+  getLiChildren = data =>
     data.map((item, i) => {
       return (
         <Col key={i.toString()} {...item} title={null} content={null}>
           <h2 {...item.title}>
-            {typeof item.title.children === 'string' &&
+            {typeof item.title.children === "string" &&
             item.title.children.match(isImg) ? (
               <img src={item.title.children} width="100%" alt="img" />
             ) : (
@@ -24,15 +24,15 @@ class Footer extends React.Component {
           </h2>
           <div {...item.content}>{item.content.children}</div>
         </Col>
-      );
-    });
+      )
+    })
 
   render() {
-    const { ...props } = this.props;
-    const { dataSource } = props;
-    delete props.dataSource;
-    delete props.isMobile;
-    const childrenToRender = this.getLiChildren(dataSource.block.children);
+    const { ...props } = this.props
+    const { dataSource } = props
+    delete props.dataSource
+    delete props.isMobile
+    const childrenToRender = this.getLiChildren(dataSource.block.children)
     return (
       <div {...props} {...dataSource.wrapper}>
         <OverPack {...dataSource.OverPack}>
@@ -46,7 +46,7 @@ class Footer extends React.Component {
             {childrenToRender}
           </QueueAnim>
           <TweenOne
-            animation={{ y: '+=30', opacity: 0, type: 'from' }}
+            animation={{ y: "+=30", opacity: 0, type: "from" }}
             key="copyright"
             {...dataSource.copyrightWrapper}
           >
@@ -58,8 +58,8 @@ class Footer extends React.Component {
           </TweenOne>
         </OverPack>
       </div>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer
