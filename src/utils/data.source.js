@@ -125,7 +125,11 @@ export const Content110DataSource = {
           href: "#",
           children: (
             <>
-              <p>Events</p>
+              <p>
+                <a href="event" target="_blank">
+                  Events
+                </a>
+              </p>
             </>
           ),
         },
@@ -491,7 +495,13 @@ export const Footer10DataSource = {
           children: (
             <>
               <p>History</p>
-              <p>How we run</p> <p>Events</p> <p>Mentorship</p>
+              <p>How we run</p>
+              <p>
+                <a href="events"> Events</a>
+              </p>
+              <p>
+                <a href="mentorship">Mentorship</a>
+              </p>
             </>
           ),
         },
@@ -511,8 +521,29 @@ export const Footer10DataSource = {
         content: {
           children: (
             <>
-              <p>Facebook</p> <p>Instagram</p> <p>Messenger</p>
-              <p>Linkedin</p>
+              <p>
+                <a target="_blank" href="https://facebook.com/oluuulaaa/">
+                  Facebook
+                </a>
+              </p>
+              <p>
+                <a target="_blank" href="https://www.instagram.com/oluuulaaa/">
+                  Instagram
+                </a>
+              </p>
+              <p>
+                <a target="_blank" href="https://m.me/oluuulaaa">
+                  Messenger
+                </a>
+              </p>
+              <p>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/oluulaa/"
+                >
+                  Linkedin
+                </a>
+              </p>
             </>
           ),
         },
@@ -532,11 +563,33 @@ export const Footer10DataSource = {
         content: {
           children: (
             <>
-              <p>Join Us</p>
-              <p>Apply for mentorship</p>
-              <p>Donate</p>
               <p>
-                <a href="https://github.com/tuguScript/oluulaa/issues">
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/1To-b0tkpPLRHCwyNPiT_SkVwD1mJUnGe-Vi1G8BpIvg"
+                >
+                  Join Us
+                </a>
+              </p>
+              <p>
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/1f6f-sYTlQ6xVd_Ox5LpYnoaPGZhZ1RSfi8Bftbvs5hM"
+                >
+                  {" "}
+                  Apply for mentorship
+                </a>
+              </p>
+              <p>
+                <a target="_blank" href="https://venmo.com/Oluulaa-Oluulaa">
+                  Donate
+                </a>
+              </p>
+              <p>
+                <a
+                  target="_blank"
+                  href="https://github.com/tuguScript/oluulaa/issues"
+                >
                   Report an Issue
                 </a>
               </p>
