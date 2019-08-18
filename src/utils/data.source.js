@@ -385,6 +385,7 @@ export const Teams20DataSource = {
     ],
   },
 }
+
 export const Footer10DataSource = {
   wrapper: { className: "home-page-wrapper footer1-wrapper" },
   OverPack: { className: "footer1", playScale: 0.2, id: "footer" },
