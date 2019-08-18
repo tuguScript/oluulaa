@@ -59,7 +59,11 @@ export const Banner30DataSource = {
         target: "_blank",
         children: (
           <>
-            <p>Apply Now</p>
+            <p>
+              <a href="https://docs.google.com/forms/d/1f6f-sYTlQ6xVd_Ox5LpYnoaPGZhZ1RSfi8Bftbvs5hM/edit">
+                Apply Now
+              </a>
+            </p>
           </>
         ),
       },
