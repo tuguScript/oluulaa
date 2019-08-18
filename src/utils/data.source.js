@@ -195,17 +195,22 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
+            "https://www.tugi.me/static/profile_pic-cff3153fd2fe285172a5b0aa6533a981.jpg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
           children: [
-            { name: "title", className: "teams2-title", children: "Dorjoo" },
+            { name: "title", className: "teams2-title", children: "Tuguldur" },
             {
               name: "content",
               className: "teams2-job",
+              children: "Projects: #tech, #events, #design",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
               children:
-                "Incididunt aliqua sit tempor consequat ullamco minim culpa tempor cupidatat id dolor est.",
+                "My skills and experience include UI+UX design, front-end development, back-end development, and involvement in product launches. ",
             },
           ],
         },
@@ -219,35 +224,7 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "Dorjoo" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "Consequat tempor sint et mollit ipsum.",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "Ex dolor sunt esse cillum occaecat anim in.",
-            },
-          ],
-        },
-      },
-      {
-        name: "block0",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
+            "https://media.licdn.com/dms/image/C5603AQHM2dn8VCQqSA/profile-displayphoto-shrink_200_200/0?e=1568851200&v=beta&t=od2N_b23h-cc5bxMvSMJ9-KUlUTJwOBigQ90va3Hi5k",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -255,23 +232,17 @@ export const Teams20DataSource = {
             {
               name: "title",
               className: "teams2-title",
-              children: (
-                <>
-                  <p>Boldoo</p>
-                </>
-              ),
+              children: "Ulziibayar",
             },
             {
               name: "content",
               className: "teams2-job",
-              children:
-                "In quis exercitation aliquip voluptate minim dolor velit ipsum qui.",
+              children: "Projects: #finance, #events",
             },
             {
               name: "content1",
               className: "teams2-content",
-              children:
-                "Sunt elit aliqua velit mollit amet minim veniam ea commodo officia adipisicing proident.",
+              children: "Bio: ",
             },
           ],
         },
@@ -285,7 +256,7 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
+            "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/57247054_2153248991428321_7702553494917480448_o.jpg?_nc_cat=106&_nc_oc=AQmfAZPede11HOZbto3OiWLCLKxT_3grCKCwWtY_gp4hXTaprFbuxKx4vAxfGucJQk94_eY-Lf2VI-Kzx4QKqIHq&_nc_ht=scontent-sjc3-1.xx&oh=1c907f2ee85d1384ba7e5ee681dd3737&oe=5DE9D194",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -295,15 +266,55 @@ export const Teams20DataSource = {
               className: "teams2-title",
               children: (
                 <>
-                  <p>Tsetsgee</p>
+                  <p>Chinzorig</p>
                 </>
               ),
             },
             {
               name: "content",
               className: "teams2-job",
-              children:
-                "Ut amet exercitation commodo excepteur adipisicing cillum aute dolor fugiat.",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-job",
+              children: "Bio: Software Engineer at UCSF. ",
+            },
+          ],
+        },
+      },
+      {
+        name: "block0",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children:
+            "https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/291109_10150746028530284_5895722_o.jpg?_nc_cat=103&_nc_oc=AQlpxsMWIBcFlAMvj-tO6Wi-6Q3AB4YavT9MW3MPTVg38MMuoucZTEYXfpaQuyWkSKerAnZaFS7APtgA0AVz15fp&_nc_ht=scontent-sjc3-1.xx&oh=063a030ee9240e2b8838814c55f0757c&oe=5DD45937",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Enkhuush</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Senior Data Analyst at Samba TV.",
             },
           ],
         },
@@ -317,22 +328,21 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
+            "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/68504989_713765905702806_2547784487001915392_n.jpg?_nc_cat=109&_nc_oc=AQlN46PMu22aIOLzh1EAX20OX0mIgX2fpRDcEIAnbWRW6DUYH01HNAc3e5-3PIAwulXBbsxfDdv250IW2PH7y5Nu&_nc_ht=scontent-sjc3-1.xx&oh=29dff612046b24dd2512b9d66677ea39&oe=5E15D020",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
           children: [
-            { name: "title", className: "teams2-title", children: "Tuguldur" },
+            { name: "title", className: "teams2-title", children: "Zolzaya" },
             {
               name: "content",
               className: "teams2-job",
-              children: "Id in culpa non ipsum.",
+              children: "Projects: #marketing",
             },
             {
               name: "content1",
               className: "teams2-content",
-              children:
-                "Adipisicing ut veniam sit id cupidatat velit non consequat esse commodo id Lorem.",
+              children: "Bio: Student",
             },
           ],
         },
@@ -346,112 +356,29 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
+            "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/10157332_623240774440901_2426597592566701627_n.jpg?_nc_cat=111&_nc_oc=AQkt-OedYZdRIOHy_ZenZ6KVQ3vHvetSCjx0wDPeiXl76iCjvosqt5RVSLUFtEW0V9YJFRvyIWGnv-ICN15urwqa&_nc_ht=scontent-sjc3-1.xx&oh=fbd35157979ff01ed3a086d7bb9e9925&oe=5DDC867C",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
           children: [
-            { name: "title", className: "teams2-title", children: "Tuguldur" },
+            {
+              name: "title",
+              className: "teams2-title",
+              children: "Khulan Byambaa",
+            },
             {
               name: "content",
               className: "teams2-job",
-              children: "Ut voluptate irure incididunt pariatur.",
+              children: "Projects: #finance #design",
             },
             {
               name: "content1",
               className: "teams2-content",
-              children:
-                "Incididunt pariatur ipsum ea ut ea nisi sit proident officia ullamco adipisicing eu voluptate.",
+              children: "Bio: Accountant at Chigbu & Co, LLP",
             },
           ],
         },
-      },
-      {
-        name: "block8",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "Tuguldur" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children:
-                "Deserunt nisi qui in elit aute sit commodo laborum Lorem.",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "Ad nisi do dolor elit ea.",
-            },
-          ],
-        },
-      },
-      {
-        name: "block7",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "Tuguldur" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children:
-                "Veniam occaecat ipsum ea duis deserunt veniam amet voluptate proident ea proident pariatur veniam duis.",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "Sunt cupidatat non laboris culpa commodo.",
-            },
-          ],
-        },
-      },
-      {
-        name: "block~jxpbsunmen",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "Tuguldur" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "Commodo laboris deserunt magna ex sint in irure.",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "Laborum sit occaecat proident excepteur.",
-            },
-          ],
-        },
-      },
+      }
     ],
   },
 }
