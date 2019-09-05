@@ -1,7 +1,7 @@
 ---
 templateKey: event
 title: Finding your ideal career path with Tess & Saraa
-date: 2019-10-03T17:30:00.000Z
+date: 2019-08-03T17:30:00.000Z
 presenters:
   - image: /img/tess.jpg
     links:
