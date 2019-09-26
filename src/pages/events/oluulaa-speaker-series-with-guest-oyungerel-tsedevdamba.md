@@ -1,7 +1,7 @@
 ---
 templateKey: event
 title: Oluulaa Speaker Series with guest Oyungerel Tsedevdamba
-date: 2019-09-28T18:00:00.000Z
+date: 2019-09-28T18:01:00.000Z
 presenters:
   - image: /img/screen-shot-2019-09-25-at-5.19.09-pm.png
     name: Oyungerel
