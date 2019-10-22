@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Preparing the Next Generation of IT. Professionals
+title: Preparing the Next Generation of IT. Professionals with Shagai Nyamdorj
 date: 2019-10-22T03:47:32.757Z
 thumbnail: /img/72102948_711434279331288_6985601076711915520_n.jpg
 author: Баярсайханы Золзаяа
