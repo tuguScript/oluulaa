@@ -1,7 +1,7 @@
 ---
 templateKey: event
 title: 'Mongolia: now and future'
-date: 2020-01-07T02:36:37.680Z
+date: 2020-01-15T03:00:00.000Z
 presenters:
   - image: /img/screen-shot-2020-01-06-at-6.37.51-pm.png
     name: Mr. Jargalsaikhan Dambadarjaa
