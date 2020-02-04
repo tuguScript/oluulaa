@@ -190,7 +190,7 @@ export const Teams20DataSource = {
     gutter: 72,
     children: [
       {
-        name: "block3",
+        name: "block_tugi",
         className: "block",
         md: 8,
         xs: 24,
@@ -219,7 +219,7 @@ export const Teams20DataSource = {
         },
       },
       {
-        name: "block4",
+        name: "block_chinzo",
         className: "block",
         md: 8,
         xs: 24,
@@ -227,39 +227,7 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://media.licdn.com/dms/image/C5603AQHM2dn8VCQqSA/profile-displayphoto-shrink_200_200/0?e=1568851200&v=beta&t=od2N_b23h-cc5bxMvSMJ9-KUlUTJwOBigQ90va3Hi5k",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            {
-              name: "title",
-              className: "teams2-title",
-              children: "Ulziibayar",
-            },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "Projects: #finance, #events",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "Bio: ",
-            },
-          ],
-        },
-      },
-      {
-        name: "block5",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/57247054_2153248991428321_7702553494917480448_o.jpg?_nc_cat=106&_nc_oc=AQmfAZPede11HOZbto3OiWLCLKxT_3grCKCwWtY_gp4hXTaprFbuxKx4vAxfGucJQk94_eY-Lf2VI-Kzx4QKqIHq&_nc_ht=scontent-sjc3-1.xx&oh=1c907f2ee85d1384ba7e5ee681dd3737&oe=5DE9D194",
+            "/img/chinzo.jpg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -287,7 +255,38 @@ export const Teams20DataSource = {
         },
       },
       {
-        name: "block0",
+        name: "block_ulzii",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/ulzii.jpeg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: "Ulziibayar",
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #finance, #events",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Software Engineer at r2c",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_solongo",
         className: "block",
         md: 8,
         xs: 24,
@@ -295,7 +294,79 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/291109_10150746028530284_5895722_o.jpg?_nc_cat=103&_nc_oc=AQlpxsMWIBcFlAMvj-tO6Wi-6Q3AB4YavT9MW3MPTVg38MMuoucZTEYXfpaQuyWkSKerAnZaFS7APtgA0AVz15fp&_nc_ht=scontent-sjc3-1.xx&oh=063a030ee9240e2b8838814c55f0757c&oe=5DD45937",
+            "/img/solongo.jpeg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Solongo</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Senior Associate at PwC",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_khulan_ba",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children:
+            "/img/khulan_batsaikhan.jpg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Khulan Batsaikhan</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Designer at Studio Sarah Willmer Architecture",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_enkhuush",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children:
+            "/img/enkhuush.jpg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -323,7 +394,7 @@ export const Teams20DataSource = {
         },
       },
       {
-        name: "block1",
+        name: "block_khulan_bya",
         className: "block",
         md: 8,
         xs: 24,
@@ -331,35 +402,7 @@ export const Teams20DataSource = {
           name: "image",
           className: "teams2-image",
           children:
-            "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/68504989_713765905702806_2547784487001915392_n.jpg?_nc_cat=109&_nc_oc=AQlN46PMu22aIOLzh1EAX20OX0mIgX2fpRDcEIAnbWRW6DUYH01HNAc3e5-3PIAwulXBbsxfDdv250IW2PH7y5Nu&_nc_ht=scontent-sjc3-1.xx&oh=29dff612046b24dd2512b9d66677ea39&oe=5E15D020",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "Zolzaya" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "Projects: #marketing",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "Bio: Student",
-            },
-          ],
-        },
-      },
-      {
-        name: "block6",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/10157332_623240774440901_2426597592566701627_n.jpg?_nc_cat=111&_nc_oc=AQkt-OedYZdRIOHy_ZenZ6KVQ3vHvetSCjx0wDPeiXl76iCjvosqt5RVSLUFtEW0V9YJFRvyIWGnv-ICN15urwqa&_nc_ht=scontent-sjc3-1.xx&oh=fbd35157979ff01ed3a086d7bb9e9925&oe=5DDC867C",
+            "/img/khulan_byambaa.jpeg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
