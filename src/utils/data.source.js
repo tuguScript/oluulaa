@@ -280,7 +280,7 @@ export const Teams20DataSource = {
             {
               name: "content1",
               className: "teams2-content",
-              children: "Bio: ",
+              children: "Bio: Software Engineer at r2c",
             },
           ],
         },
@@ -352,7 +352,7 @@ export const Teams20DataSource = {
             {
               name: "content1",
               className: "teams2-content",
-              children: "Bio: Senior Associate at PwC",
+              children: "Bio: Designer at Studio Sarah Willmer Architecture",
             },
           ],
         },
