@@ -26,6 +26,7 @@
     "node-gyp": "^6.1.0",
     "nvm": "0.0.4",
     "path": "^0.12.7",
+    "pdf-viewer-reactjs": "^2.0.2",
     "prop-types": "^15.7.2",
     "rc-banner-anim": "^2.2.8",
     "rc-queue-anim": "^1.6.12",
@@ -34,7 +35,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-google-maps": "^9.4.5",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-linkedin-certification": "^1.0.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
