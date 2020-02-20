@@ -30,7 +30,7 @@ export default class NotFoundPage extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Orgil Batbold" />
+        <SEO title="Norjinsuren Battulga" />
         <div style={{ display: "flex", flex: '1', marginTop: '50px', cursor: 'pointer' }}>
           <PDFViewer
             onDocumentClick={() => this.downloadPdf()}
