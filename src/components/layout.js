@@ -13,7 +13,7 @@ import Header from "./header"
 import Footer from "../components/footer"
 import "../less/antMotionStyle.less"
 
-
+const { location } = window
 if (typeof window !== `undefined`) {
   const { location } = window
 }
