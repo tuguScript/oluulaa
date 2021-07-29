@@ -204,7 +204,7 @@ export const Content120DataSource = {
           wrapper: { className: "block-content" },
           img: {
             children:
-              "https://gw.alipayobjects.com/zos/rmsportal/TFicUVisNHTOEeMYXuQF.svg",
+              "https://photos5.appleinsider.com/gallery/20938-23374-apple-podcasts-xl.jpg",
           },
         },
       },
@@ -217,7 +217,7 @@ export const Content120DataSource = {
           wrapper: { className: "block-content" },
           img: {
             children:
-              "https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg",
+              "https://www.nysora.com/wp-content/uploads/2020/07/Soundcloud-Podcast-Badge-2.png",
           },
         },
       },
@@ -230,46 +230,7 @@ export const Content120DataSource = {
           wrapper: { className: "block-content" },
           img: {
             children:
-              "https://gw.alipayobjects.com/zos/rmsportal/bqyPRSZmhvrsfJrBvASi.svg",
-          },
-        },
-      },
-      {
-        name: "block3",
-        className: "block",
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children:
-              "https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg",
-          },
-        },
-      },
-      {
-        name: "block4",
-        className: "block",
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children:
-              "https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg",
-          },
-        },
-      },
-      {
-        name: "block5",
-        className: "block",
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: "block-content" },
-          img: {
-            children:
-              "https://gw.alipayobjects.com/zos/rmsportal/ftBIiyJcCHpHEioRvPsV.svg",
+              "https://i2.wp.com/www.thegrandgeekgathering.com/wp-content/uploads/2018/11/google-podcasts-logo-transparent.png?w=640&ssl=1",
           },
         },
       },
@@ -366,284 +327,6 @@ export const Content110DataSource = {
         ),
       },
     },
-  },
-}
-export const Teams20DataSource = {
-  wrapper: { className: "home-page-wrapper teams2-wrapper" },
-  page: { className: "home-page teams2" },
-  OverPack: { playScale: 0.3, className: "" },
-  titleWrapper: {
-    className: "title-wrapper",
-    children: [
-      {
-        name: "title",
-        children: (
-          <span>
-            <span>
-              <p>Meet the Team</p>
-            </span>
-          </span>
-        ),
-      },
-    ],
-  },
-  block: {
-    className: "block-wrapper",
-    gutter: 72,
-    children: [
-      {
-        name: "block0",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "叶秀英" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "AntV 是蚂蚁金服全新一代数据可视化解决方案。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block1",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "韩勇" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "语雀是一款优雅高效的在线文档编辑与协同工具。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block2",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "叶秀英" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "AntV 是蚂蚁金服全新一代数据可视化解决方案。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block3",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "叶秀英" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "AntV 是蚂蚁金服全新一代数据可视化解决方案。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block4",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "韩勇" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "语雀是一款优雅高效的在线文档编辑与协同工具。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block5",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "叶秀英" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "AntV 是蚂蚁金服全新一代数据可视化解决方案。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block6",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "叶秀英" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "AntV 是蚂蚁金服全新一代数据可视化解决方案。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block7",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "韩勇" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "语雀是一款优雅高效的在线文档编辑与协同工具。",
-            },
-          ],
-        },
-      },
-      {
-        name: "block8",
-        className: "block",
-        md: 8,
-        xs: 24,
-        image: {
-          name: "image",
-          className: "teams2-image",
-          children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ",
-        },
-        titleWrapper: {
-          className: "teams2-textWrapper",
-          children: [
-            { name: "title", className: "teams2-title", children: "叶秀英" },
-            {
-              name: "content",
-              className: "teams2-job",
-              children: "公司+职位 信息暂缺",
-            },
-            {
-              name: "content1",
-              className: "teams2-content",
-              children: "AntV 是蚂蚁金服全新一代数据可视化解决方案。",
-            },
-          ],
-        },
-      },
-    ],
   },
 }
 export const Pricing00DataSource = {
@@ -1131,261 +814,261 @@ export const Banner30DataSource = {
 //     },
 //   ],
 // }
-// export const Teams20DataSource = {
-//   wrapper: { className: "home-page-wrapper teams2-wrapper" },
-//   page: { className: "home-page teams2" },
-//   OverPack: { playScale: 0.3, className: "" },
-//   titleWrapper: {
-//     className: "title-wrapper",
-//     children: [
-//       {
-//         name: "title",
-//         children: (
-//           <>
-//             <p>Our team</p>
-//           </>
-//         ),
-//       },
-//     ],
-//   },
-//   block: {
-//     className: "block-wrapper",
-//     gutter: 72,
-//     children: [
-//       {
-//         name: "block_tugi",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children:
-//             "https://www.tugi.me/static/profile_pic-cff3153fd2fe285172a5b0aa6533a981.jpg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             { name: "title", className: "teams2-title", children: "Tuguldur" },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #tech, #events, #design",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-content",
-//               children:
-//                 "My skills and experience include UI+UX design, front-end development, back-end development, and involvement in product launches. ",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         name: "block_chinzo",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children: "/img/chinzo.jpg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             {
-//               name: "title",
-//               className: "teams2-title",
-//               children: (
-//                 <>
-//                   <p>Chinzorig</p>
-//                 </>
-//               ),
-//             },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #events #marketing",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-job",
-//               children: "Bio: Software Engineer at UCSF. ",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         name: "block_ulzii",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children: "/img/ulzii.jpeg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             {
-//               name: "title",
-//               className: "teams2-title",
-//               children: "Ulziibayar",
-//             },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #finance, #events",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-content",
-//               children: "Bio: Software Engineer at r2c",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         name: "block_solongo",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children: "/img/solongo.jpeg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             {
-//               name: "title",
-//               className: "teams2-title",
-//               children: (
-//                 <>
-//                   <p>Solongo</p>
-//                 </>
-//               ),
-//             },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #events #marketing",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-content",
-//               children: "Bio: Senior Associate at PwC",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         name: "block_khulan_ba",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children: "/img/khulan_batsaikhan.jpg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             {
-//               name: "title",
-//               className: "teams2-title",
-//               children: (
-//                 <>
-//                   <p>Khulan Batsaikhan</p>
-//                 </>
-//               ),
-//             },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #events #marketing",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-content",
-//               children: "Bio: Designer at Studio Sarah Willmer Architecture",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         name: "block_enkhuush",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children: "/img/enkhuush.jpg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             {
-//               name: "title",
-//               className: "teams2-title",
-//               children: (
-//                 <>
-//                   <p>Enkhuush</p>
-//                 </>
-//               ),
-//             },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #events #marketing",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-content",
-//               children: "Bio: Senior Data Analyst at Samba TV.",
-//             },
-//           ],
-//         },
-//       },
-//       {
-//         name: "block_khulan_bya",
-//         className: "block",
-//         md: 8,
-//         xs: 24,
-//         image: {
-//           name: "image",
-//           className: "teams2-image",
-//           children: "/img/khulan_byambaa.jpeg",
-//         },
-//         titleWrapper: {
-//           className: "teams2-textWrapper",
-//           children: [
-//             {
-//               name: "title",
-//               className: "teams2-title",
-//               children: "Khulan Byambaa",
-//             },
-//             {
-//               name: "content",
-//               className: "teams2-job",
-//               children: "Projects: #finance #design",
-//             },
-//             {
-//               name: "content1",
-//               className: "teams2-content",
-//               children: "Bio: Accountant at Chigbu & Co, LLP",
-//             },
-//           ],
-//         },
-//       },
-//     ],
-//   },
-// }
+export const Teams20DataSource = {
+  wrapper: { className: "home-page-wrapper teams2-wrapper" },
+  page: { className: "home-page teams2" },
+  OverPack: { playScale: 0.3, className: "" },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      {
+        name: "title",
+        children: (
+          <>
+            <p>Our team</p>
+          </>
+        ),
+      },
+    ],
+  },
+  block: {
+    className: "block-wrapper",
+    gutter: 72,
+    children: [
+      {
+        name: "block_tugi",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children:
+            "https://www.tugi.me/static/profile_pic-cff3153fd2fe285172a5b0aa6533a981.jpg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            { name: "title", className: "teams2-title", children: "Tuguldur" },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #tech, #events, #design",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children:
+                "My skills and experience include UI+UX design, front-end development, back-end development, and involvement in product launches. ",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_chinzo",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/chinzo.jpg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Chinzorig</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-job",
+              children: "Bio: Software Engineer at UCSF. ",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_ulzii",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/ulzii.jpeg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: "Ulziibayar",
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #finance, #events",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Software Engineer at r2c",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_solongo",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/solongo.jpeg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Solongo</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Senior Associate at PwC",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_khulan_ba",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/khulan_batsaikhan.jpg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Khulan Batsaikhan</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Designer at Studio Sarah Willmer Architecture",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_enkhuush",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/enkhuush.jpg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: (
+                <>
+                  <p>Enkhuush</p>
+                </>
+              ),
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #events #marketing",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Senior Data Analyst at Samba TV.",
+            },
+          ],
+        },
+      },
+      {
+        name: "block_khulan_bya",
+        className: "block",
+        md: 8,
+        xs: 24,
+        image: {
+          name: "image",
+          className: "teams2-image",
+          children: "/img/khulan_byambaa.jpeg",
+        },
+        titleWrapper: {
+          className: "teams2-textWrapper",
+          children: [
+            {
+              name: "title",
+              className: "teams2-title",
+              children: "Khulan Byambaa",
+            },
+            {
+              name: "content",
+              className: "teams2-job",
+              children: "Projects: #finance #design",
+            },
+            {
+              name: "content1",
+              className: "teams2-content",
+              children: "Bio: Accountant at Chigbu & Co, LLP",
+            },
+          ],
+        },
+      },
+    ],
+  },
+}
 
 export const Footer10DataSource = {
   wrapper: { className: "home-page-wrapper footer1-wrapper" },

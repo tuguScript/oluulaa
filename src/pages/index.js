@@ -18,6 +18,7 @@ import { enquireScreen } from "enquire-js"
 import Banner3 from "../components/banner"
 import Content from "../components/content"
 import Content12 from "../components/Content12"
+import Content11 from "../components/Content11"
 import Banner5 from "../components/Banner5"
 import Teams from "../components/team"
 import DonationSection from "../components/donationSection"
@@ -78,21 +79,21 @@ export default class IndexPage extends React.Component {
           dataSource={Content120DataSource}
           isMobile={this.state.isMobile}
         />
-        ,
-        {/* <Content11
+        <Content
           id="Content11_0"
           key="Content11_0"
           dataSource={Content110DataSource}
           isMobile={this.state.isMobile}
         />
         ,
-        <Teams2
+        <Teams
           id="Teams2_0"
           key="Teams2_0"
           dataSource={Teams20DataSource}
           isMobile={this.state.isMobile}
         />
         ,
+        {/* 
         <Pricing0
           id="Pricing0_0"
           key="Pricing0_0"
@@ -100,23 +101,11 @@ export default class IndexPage extends React.Component {
           isMobile={this.state.isMobile}
         /> */}
         ,{/* About section*/}
-        {/* <Content
-          id="Content11_0"
-          key="Content11_0"
-          dataSource={Content110DataSource}
-          isMobile={this.state.isMobile}
-        /> */}
         {/* Upcoming Event */}
         {new Date(this.latestEvent.rawDate).getTime() > new Date().getTime() ? (
           <Event event={this.latestEvent} />
         ) : null}
         {/* TODO:  introduce Mentorship program (3 sections)  */}
-        <Teams
-          id="Teams2_0"
-          key="Teams2_0"
-          dataSource={Teams20DataSource}
-          isMobile={this.state.isMobile}
-        />
         <DonationSection />
       </Layout>
     )
