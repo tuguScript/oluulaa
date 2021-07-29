@@ -7,13 +7,18 @@ import SEO from "../components/seo"
 import {
   Nav00DataSource,
   Banner30DataSource,
-  Content110DataSource,
   Teams20DataSource,
   Footer10DataSource,
+  Banner50DataSource,
+  Content120DataSource,
+  Content110DataSource,
+  Pricing00DataSource,
 } from "../utils/data.source"
 import { enquireScreen } from "enquire-js"
 import Banner3 from "../components/banner"
 import Content from "../components/content"
+import Content12 from "../components/Content12"
+import Banner5 from "../components/Banner5"
 import Teams from "../components/team"
 import DonationSection from "../components/donationSection"
 import Event from "../components/Event"
@@ -54,26 +59,58 @@ export default class IndexPage extends React.Component {
       <Layout>
         <SEO title="oluulaa.io" />
         {/* TODO:  Banner (Sliding) */}
-        <Banner3
+        {/* <Banner3
           id="Banner3_0"
           key="Banner3_0"
           dataSource={Banner30DataSource}
           isMobile={this.state.isMobile}
+        /> */}
+        <Banner5
+          id="Banner5_0"
+          key="Banner5_0"
+          dataSource={Banner50DataSource}
+          isMobile={this.state.isMobile}
         />
-        {/* About section*/}
-        <Content
+        ,
+        <Content12
+          id="Content12_0"
+          key="Content12_0"
+          dataSource={Content120DataSource}
+          isMobile={this.state.isMobile}
+        />
+        ,
+        {/* <Content11
           id="Content11_0"
           key="Content11_0"
           dataSource={Content110DataSource}
           isMobile={this.state.isMobile}
         />
+        ,
+        <Teams2
+          id="Teams2_0"
+          key="Teams2_0"
+          dataSource={Teams20DataSource}
+          isMobile={this.state.isMobile}
+        />
+        ,
+        <Pricing0
+          id="Pricing0_0"
+          key="Pricing0_0"
+          dataSource={Pricing00DataSource}
+          isMobile={this.state.isMobile}
+        /> */}
+        ,{/* About section*/}
+        {/* <Content
+          id="Content11_0"
+          key="Content11_0"
+          dataSource={Content110DataSource}
+          isMobile={this.state.isMobile}
+        /> */}
         {/* Upcoming Event */}
         {new Date(this.latestEvent.rawDate).getTime() > new Date().getTime() ? (
           <Event event={this.latestEvent} />
         ) : null}
-
         {/* TODO:  introduce Mentorship program (3 sections)  */}
-
         <Teams
           id="Teams2_0"
           key="Teams2_0"
