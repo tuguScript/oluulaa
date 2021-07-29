@@ -23,6 +23,7 @@ import Banner5 from "../components/Banner5"
 import Teams from "../components/team"
 import DonationSection from "../components/donationSection"
 import Event from "../components/Event"
+import Pricing0 from "../components/Pricing0"
 
 const fakeEventData = {
   formattedDate: "August 3rd 2019 @ 5:30 PM",
@@ -93,20 +94,19 @@ export default class IndexPage extends React.Component {
           isMobile={this.state.isMobile}
         />
         ,
-        {/* 
         <Pricing0
           id="Pricing0_0"
           key="Pricing0_0"
           dataSource={Pricing00DataSource}
           isMobile={this.state.isMobile}
-        /> */}
+        />
         ,{/* About section*/}
         {/* Upcoming Event */}
         {new Date(this.latestEvent.rawDate).getTime() > new Date().getTime() ? (
           <Event event={this.latestEvent} />
         ) : null}
         {/* TODO:  introduce Mentorship program (3 sections)  */}
-        <DonationSection />
+        {/* <DonationSection /> */}
       </Layout>
     )
   }

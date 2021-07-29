@@ -371,7 +371,7 @@ export const Pricing00DataSource = {
         ),
         className: "pricing0-content",
       },
-      { name: "pricing", children: "¥2,200", className: "pricing0-pricing" },
+      { name: "pricing", children: "Monthly", className: "pricing0-pricing" },
       {
         name: "button",
         children: {
@@ -1083,7 +1083,7 @@ export const Footer10DataSource = {
         className: "block",
         title: {
           className: "logo",
-          children: "Oluulaa",
+          children: "MITPU",
         },
         content: {
           className: "slogan",
@@ -1220,7 +1220,7 @@ export const Footer10DataSource = {
     className: "copyright",
     children: (
       <>
-        <span>©2019 by Oluulaa All Rights Reserved</span>
+        <span>2021 by MITPU All Rights Reserved</span>
       </>
     ),
   },
