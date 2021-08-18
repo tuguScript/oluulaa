@@ -1,5 +1,651 @@
 import React from "react"
 
+// export const Nav00DataSource = {
+//   wrapper: { className: "header0 home-page-wrapper" },
+//   page: { className: "home-page" },
+//   logo: {
+//     className: "header0-logo",
+//     children: "https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg",
+//   },
+//   Menu: {
+//     className: "header0-menu",
+//     children: [
+//       {
+//         name: "item0",
+//         className: "header0-item",
+//         children: {
+//           href: "#",
+//           children: [{ children: "导航一", name: "text" }],
+//         },
+//         subItem: [
+//           {
+//             name: "sub0",
+//             className: "item-sub",
+//             children: {
+//               className: "item-sub-item",
+//               children: [
+//                 {
+//                   name: "image0",
+//                   className: "item-image",
+//                   children:
+//                     "https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg",
+//                 },
+//                 {
+//                   name: "title",
+//                   className: "item-title",
+//                   children: "Ant Design",
+//                 },
+//                 {
+//                   name: "content",
+//                   className: "item-content",
+//                   children: "企业级 UI 设计体系",
+//                 },
+//               ],
+//             },
+//           },
+//           {
+//             name: "sub1",
+//             className: "item-sub",
+//             children: {
+//               className: "item-sub-item",
+//               children: [
+//                 {
+//                   name: "image0",
+//                   className: "item-image",
+//                   children:
+//                     "https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg",
+//                 },
+//                 {
+//                   name: "title",
+//                   className: "item-title",
+//                   children: "Ant Design",
+//                 },
+//                 {
+//                   name: "content",
+//                   className: "item-content",
+//                   children: "企业级 UI 设计体系",
+//                 },
+//               ],
+//             },
+//           },
+//         ],
+//       },
+//       {
+//         name: "item1",
+//         className: "header0-item",
+//         children: {
+//           href: "#",
+//           children: [{ children: "导航二", name: "text" }],
+//         },
+//       },
+//       {
+//         name: "item2",
+//         className: "header0-item",
+//         children: {
+//           href: "#",
+//           children: [{ children: "导航三", name: "text" }],
+//         },
+//       },
+//       {
+//         name: "item3",
+//         className: "header0-item",
+//         children: {
+//           href: "#",
+//           children: [{ children: "导航四", name: "text" }],
+//         },
+//       },
+//     ],
+//   },
+//   mobileMenu: { className: "header0-mobile-menu" },
+// }
+export const Banner50DataSource = {
+  wrapper: { className: "home-page-wrapper banner5" },
+  page: { className: "home-page banner5-page" },
+  childWrapper: {
+    className: "banner5-title-wrapper",
+    children: [
+      {
+        name: "title",
+        children: (
+          <span>
+            <span>
+              <span>
+                <span>
+                  <p>Get referred</p>
+                </span>
+              </span>
+            </span>
+          </span>
+        ),
+        className: "banner5-title kqy7loeujw-editor_css",
+      },
+      {
+        name: "explain",
+        className: "banner5-explain",
+        children: (
+          <span>
+            <span>
+              <p>MITPU referral program</p>
+            </span>
+          </span>
+        ),
+      },
+      {
+        name: "content",
+        className: "banner5-content",
+        children: (
+          <span>
+            <span>
+              <span>
+                <p>
+                  Discover your potentials!
+                  <br />
+                </p>
+              </span>
+            </span>
+          </span>
+        ),
+      },
+      {
+        name: "button",
+        className: "banner5-button-wrapper",
+        children: {
+          href: "#",
+          className: "banner5-button",
+          type: "primary",
+          children: (
+            <span>
+              <p>Apply</p>
+            </span>
+          ),
+        },
+      },
+    ],
+  },
+  image: {
+    className: "banner5-image",
+    children:
+      "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*-wAhRYnWQscAAAAAAAAAAABkARQnAQ",
+  },
+}
+export const Content120DataSource = {
+  wrapper: { className: "home-page-wrapper content12-wrapper" },
+  page: { className: "home-page content12" },
+  OverPack: { playScale: 0.3, className: "" },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      {
+        name: "image",
+        children:
+          "https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg",
+        className: "title-image",
+      },
+      {
+        name: "title",
+        children: (
+          <span>
+            <p>Tune with HUMANS of MITPU podcast</p>
+          </span>
+        ),
+        className: "title-h1",
+      },
+    ],
+  },
+  block: {
+    className: "img-wrapper",
+    children: [
+      {
+        name: "block0",
+        className: "block",
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children:
+              "https://photos5.appleinsider.com/gallery/20938-23374-apple-podcasts-xl.jpg",
+          },
+        },
+      },
+      {
+        name: "block1",
+        className: "block",
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children:
+              "https://www.nysora.com/wp-content/uploads/2020/07/Soundcloud-Podcast-Badge-2.png",
+          },
+        },
+      },
+      {
+        name: "block2",
+        className: "block",
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: "block-content" },
+          img: {
+            children:
+              "https://i2.wp.com/www.thegrandgeekgathering.com/wp-content/uploads/2018/11/google-podcasts-logo-transparent.png?w=640&ssl=1",
+          },
+        },
+      },
+    ],
+  },
+}
+export const Content110DataSource = {
+  OverPack: {
+    className: "home-page-wrapper content11-wrapper",
+    playScale: 0.3,
+  },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      {
+        name: "image",
+        children:
+          "https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg",
+        className: "title-image",
+      },
+      {
+        name: "title",
+        children: (
+          <span>
+            <p>About Us</p>
+          </span>
+        ),
+        className: "title-h1",
+      },
+      {
+        name: "content",
+        children: (
+          <span>
+            <span>
+              <span>
+                <span>
+                  <p>
+                    We are non-profit working to educate and mentor Mongolian
+                    professionals in the USA.
+                  </p>
+                </span>
+              </span>
+            </span>
+          </span>
+        ),
+        className: "title-content",
+      },
+      {
+        name: "content2",
+        children: (
+          <span>
+            <span>
+              <span>
+                <span>
+                  <span>
+                    <span>
+                      <span>
+                        <span>
+                          <p>Join a team and inspire the community.</p>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        ),
+        className: "title-content",
+      },
+    ],
+  },
+  button: {
+    className: "",
+    children: {
+      a: {
+        className: "button",
+        href: "#",
+        children: (
+          <span>
+            <span>
+              <span>
+                <span>
+                  <p>
+                    SIgn up to&nbsp;
+                    <span style='-webkit-text-fill-color: inherit; font-family: -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, "helvetica neue", Arial, "noto sans", sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol", "noto color emoji";'>
+                      Volunteer
+                    </span>
+                  </p>
+                </span>
+              </span>
+            </span>
+          </span>
+        ),
+      },
+    },
+  },
+}
+export const Pricing00DataSource = {
+  wrapper: { className: "home-page-wrapper pricing0-wrapper" },
+  OverPack: { playScale: 0.3, className: "home-page pricing0" },
+  imgWrapper: { className: "pricing0-img-wrapper", md: 12, xs: 24 },
+  img: {
+    className: "pricing0-img",
+    name: "image",
+    children:
+      "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*OnyWT4Nsxy0AAAAAAAAAAABjARQnAQ",
+  },
+  childWrapper: {
+    className: "pricing0-text-wrapper",
+    md: 12,
+    xs: 24,
+    children: [
+      {
+        name: "title",
+        children: (
+          <span>
+            <span>
+              <p>Donate</p>
+            </span>
+          </span>
+        ),
+        className: "pricing0-title",
+      },
+      {
+        name: "content",
+        children: (
+          <span>
+            <span>
+              <p>
+                Help our community flourish by contributing to MITPU. With each
+                gift, you help the Mongolian Community to make a difference and
+                enrich our ever-growing network. You can make a real difference
+                by helping to fund our work.
+              </p>
+            </span>
+          </span>
+        ),
+        className: "pricing0-content",
+      },
+      { name: "pricing", children: "Monthly", className: "pricing0-pricing" },
+      {
+        name: "button",
+        children: {
+          icon: "shopping-cart",
+          href: "#",
+          type: "primary",
+          children: (
+            <span>
+              <span>
+                <span>
+                  <p>Donate Us</p>
+                </span>
+              </span>
+            </span>
+          ),
+        },
+      },
+    ],
+  },
+}
+// export const Footer10DataSource = {
+//   wrapper: { className: "home-page-wrapper footer1-wrapper" },
+//   OverPack: { className: "footer1", playScale: 0.2 },
+//   block: {
+//     className: "home-page",
+//     gutter: 0,
+//     children: [
+//       {
+//         name: "block0",
+//         xs: 24,
+//         md: 6,
+//         className: "block",
+//         title: {
+//           className: "logo",
+//           children:
+//             "https://zos.alipayobjects.com/rmsportal/qqaimmXZVSwAhpL.svg",
+//         },
+//         childWrapper: {
+//           className: "slogan",
+//           children: [
+//             {
+//               name: "content0",
+//               children: "Animation specification and components of Ant Design.",
+//             },
+//           ],
+//         },
+//       },
+//       {
+//         name: "block1",
+//         xs: 24,
+//         md: 6,
+//         className: "block",
+//         title: {
+//           children: (
+//             <span>
+//               <p>Contact Us</p>
+//             </span>
+//           ),
+//         },
+//         childWrapper: {
+//           children: [
+//             {
+//               name: "link0",
+//               href: "#",
+//               children: (
+//                 <span>
+//                   <span>
+//                     <p>Instagram</p>
+//                   </span>
+//                 </span>
+//               ),
+//             },
+//             {
+//               name: "link1",
+//               href: "#",
+//               children: (
+//                 <span>
+//                   <p>Facebook</p>
+//                 </span>
+//               ),
+//             },
+//             {
+//               name: "link2",
+//               href: "#",
+//               children: (
+//                 <span>
+//                   <p>Linkedin</p>
+//                 </span>
+//               ),
+//             },
+//             {
+//               name: "link3",
+//               href: "#",
+//               children: (
+//                 <span>
+//                   <p>Youtube</p>
+//                 </span>
+//               ),
+//             },
+//           ],
+//         },
+//       },
+//       {
+//         name: "block2",
+//         xs: 24,
+//         md: 6,
+//         className: "block",
+//         title: {
+//           children: (
+//             <span>
+//               <p>Get Involved</p>
+//             </span>
+//           ),
+//         },
+//         childWrapper: {
+//           children: [
+//             {
+//               href: "#",
+//               name: "link0",
+//               children: (
+//                 <span>
+//                   <p>Apply to referal program</p>
+//                 </span>
+//               ),
+//             },
+//             {
+//               href: "#",
+//               name: "link1",
+//               children: (
+//                 <span>
+//                   <p>Volunteer</p>
+//                 </span>
+//               ),
+//             },
+//             { name: "title~kqy92vb1hlr", className: "", children: "新增文字" },
+//           ],
+//         },
+//       },
+//       {
+//         name: "block3",
+//         xs: 24,
+//         md: 6,
+//         className: "block",
+//         title: { children: "资源" },
+//         childWrapper: {
+//           children: [
+//             { href: "#", name: "link0", children: "Ant Design" },
+//             { href: "#", name: "link1", children: "Ant Motion" },
+//           ],
+//         },
+//       },
+//     ],
+//   },
+//   copyrightWrapper: { className: "copyright-wrapper" },
+//   copyrightPage: { className: "home-page" },
+//   copyright: {
+//     className: "copyright",
+//     children: (
+//       <span>
+//         ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights
+//         Reserved
+//       </span>
+//     ),
+//   },
+// }
+
+// export const Content120DataSource = {
+//   wrapper: { className: "home-page-wrapper content12-wrapper" },
+//   page: { className: "home-page content12" },
+//   OverPack: { playScale: 0.3, className: "" },
+//   titleWrapper: {
+//     className: "title-wrapper",
+//     children: [
+//       {
+//         name: "image",
+//         children:
+//           "https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg",
+//         className: "title-image",
+//       },
+//       {
+//         name: "title",
+//         children: (
+//           <span>
+//             <p>Tune with HUMANS of MITPU podcast</p>
+//           </span>
+//         ),
+//         className: "title-h1",
+//       },
+//     ],
+//   },
+//   block: {
+//     className: "img-wrapper",
+//     children: [
+//       {
+//         name: "block0",
+//         className: "block",
+//         md: 8,
+//         xs: 24,
+//         children: {
+//           wrapper: { className: "block-content" },
+//           img: {
+//             children:
+//               "https://gw.alipayobjects.com/zos/rmsportal/TFicUVisNHTOEeMYXuQF.svg",
+//           },
+//         },
+//       },
+//       {
+//         name: "block1",
+//         className: "block",
+//         md: 8,
+//         xs: 24,
+//         children: {
+//           wrapper: { className: "block-content" },
+//           img: {
+//             children:
+//               "https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg",
+//           },
+//         },
+//       },
+//       {
+//         name: "block2",
+//         className: "block",
+//         md: 8,
+//         xs: 24,
+//         children: {
+//           wrapper: { className: "block-content" },
+//           img: {
+//             children:
+//               "https://gw.alipayobjects.com/zos/rmsportal/bqyPRSZmhvrsfJrBvASi.svg",
+//           },
+//         },
+//       },
+//       {
+//         name: "block3",
+//         className: "block",
+//         md: 8,
+//         xs: 24,
+//         children: {
+//           wrapper: { className: "block-content" },
+//           img: {
+//             children:
+//               "https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg",
+//           },
+//         },
+//       },
+//       {
+//         name: "block4",
+//         className: "block",
+//         md: 8,
+//         xs: 24,
+//         children: {
+//           wrapper: { className: "block-content" },
+//           img: {
+//             children:
+//               "https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg",
+//           },
+//         },
+//       },
+//       {
+//         name: "block5",
+//         className: "block",
+//         md: 8,
+//         xs: 24,
+//         children: {
+//           wrapper: { className: "block-content" },
+//           img: {
+//             children:
+//               "https://gw.alipayobjects.com/zos/rmsportal/ftBIiyJcCHpHEioRvPsV.svg",
+//           },
+//         },
+//       },
+//     ],
+//   },
+// }
 export const Nav00DataSource = {
   wrapper: { className: "header0 home-page-wrapper" },
   page: { className: "home-page" },
@@ -69,105 +715,105 @@ export const Banner30DataSource = {
     ],
   },
 }
-export const Content110DataSource = {
-  OverPack: {
-    className: "home-page-wrapper content11-wrapper",
-    id: "about",
-    playScale: 0.3,
-  },
-  titleWrapper: {
-    className: "title-wrapper",
-    children: [
-      {
-        name: "image",
-        children:
-          "https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg",
-        className: "title-image",
-      },
-      {
-        name: "title",
-        children: (
-          <>
-            <p>About&nbsp;Us&nbsp;</p>
-          </>
-        ),
-        className: "title-h1",
-      },
-      {
-        name: "content",
-        children: (
-          <>
-            <p>
-              Oluulaa is a collaborative platform with a mission to connect and
-              invigorate the Mongolian community members.
-            </p>
-          </>
-        ),
-        className: "title-content",
-      },
-      {
-        name: "content2",
-        children: (
-          <>
-            <p>
-              We are focusing on connect young professionals through events that
-              focus on personal and professional growth!
-            </p>
-          </>
-        ),
-        className: "title-content",
-      },
-    ],
-  },
-  buttons: [
-    {
-      className: "",
-      children: {
-        a: {
-          className: "button",
-          href: "#",
-          children: (
-            <>
-              <p>
-                <a href="event" target="_blank">
-                  Events
-                </a>
-              </p>
-            </>
-          ),
-        },
-      },
-    },
-    {
-      className: "",
-      children: {
-        a: {
-          className: "button",
-          href: "#",
-          children: (
-            <>
-              <p>Mentorship</p>
-            </>
-          ),
-        },
-      },
-    },
-    {
-      className: "",
-      children: {
-        a: {
-          className: "button",
-          href: "#",
-          children: (
-            <>
-              <p>How we're run</p>
-            </>
-          ),
-        },
-      },
-    },
-  ],
-}
+// export const Content110DataSource = {
+//   OverPack: {
+//     className: "home-page-wrapper content11-wrapper",
+//     id: "about",
+//     playScale: 0.3,
+//   },
+//   titleWrapper: {
+//     className: "title-wrapper",
+//     children: [
+//       {
+//         name: "image",
+//         children:
+//           "https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg",
+//         className: "title-image",
+//       },
+//       {
+//         name: "title",
+//         children: (
+//           <>
+//             <p>About&nbsp;Us&nbsp;</p>
+//           </>
+//         ),
+//         className: "title-h1",
+//       },
+//       {
+//         name: "content",
+//         children: (
+//           <>
+//             <p>
+//               Oluulaa is a collaborative platform with a mission to connect and
+//               invigorate the Mongolian community members.
+//             </p>
+//           </>
+//         ),
+//         className: "title-content",
+//       },
+//       {
+//         name: "content2",
+//         children: (
+//           <>
+//             <p>
+//               We are focusing on connect young professionals through events that
+//               focus on personal and professional growth!
+//             </p>
+//           </>
+//         ),
+//         className: "title-content",
+//       },
+//     ],
+//   },
+//   buttons: [
+//     {
+//       className: "",
+//       children: {
+//         a: {
+//           className: "button",
+//           href: "#",
+//           children: (
+//             <>
+//               <p>
+//                 <a href="event" target="_blank">
+//                   Events
+//                 </a>
+//               </p>
+//             </>
+//           ),
+//         },
+//       },
+//     },
+//     {
+//       className: "",
+//       children: {
+//         a: {
+//           className: "button",
+//           href: "#",
+//           children: (
+//             <>
+//               <p>Mentorship</p>
+//             </>
+//           ),
+//         },
+//       },
+//     },
+//     {
+//       className: "",
+//       children: {
+//         a: {
+//           className: "button",
+//           href: "#",
+//           children: (
+//             <>
+//               <p>How we're run</p>
+//             </>
+//           ),
+//         },
+//       },
+//     },
+//   ],
+// }
 export const Teams20DataSource = {
   wrapper: { className: "home-page-wrapper teams2-wrapper" },
   page: { className: "home-page teams2" },
@@ -226,8 +872,7 @@ export const Teams20DataSource = {
         image: {
           name: "image",
           className: "teams2-image",
-          children:
-            "/img/chinzo.jpg",
+          children: "/img/chinzo.jpg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -293,8 +938,7 @@ export const Teams20DataSource = {
         image: {
           name: "image",
           className: "teams2-image",
-          children:
-            "/img/solongo.jpeg",
+          children: "/img/solongo.jpeg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -329,8 +973,7 @@ export const Teams20DataSource = {
         image: {
           name: "image",
           className: "teams2-image",
-          children:
-            "/img/khulan_batsaikhan.jpg",
+          children: "/img/khulan_batsaikhan.jpg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -365,8 +1008,7 @@ export const Teams20DataSource = {
         image: {
           name: "image",
           className: "teams2-image",
-          children:
-            "/img/enkhuush.jpg",
+          children: "/img/enkhuush.jpg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -401,8 +1043,7 @@ export const Teams20DataSource = {
         image: {
           name: "image",
           className: "teams2-image",
-          children:
-            "/img/khulan_byambaa.jpeg",
+          children: "/img/khulan_byambaa.jpeg",
         },
         titleWrapper: {
           className: "teams2-textWrapper",
@@ -424,7 +1065,7 @@ export const Teams20DataSource = {
             },
           ],
         },
-      }
+      },
     ],
   },
 }
@@ -442,7 +1083,7 @@ export const Footer10DataSource = {
         className: "block",
         title: {
           className: "logo",
-          children: "Oluulaa",
+          children: "MITPU",
         },
         content: {
           className: "slogan",
@@ -579,7 +1220,7 @@ export const Footer10DataSource = {
     className: "copyright",
     children: (
       <>
-        <span>©2019 by Oluulaa All Rights Reserved</span>
+        <span>2021 by MITPU All Rights Reserved</span>
       </>
     ),
   },

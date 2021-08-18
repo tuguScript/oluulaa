@@ -1,17 +1,17 @@
-import React from 'react';
-import TweenOne from 'rc-tween-one';
-import { Menu } from 'antd';
-import logo from '../images/oluulaa-logo.png'
-const Item = Menu.Item;
+import React from "react"
+import TweenOne from "rc-tween-one"
+import { Menu } from "antd"
+import logo from "../images/oluulaa-logo.png"
+const Item = Menu.Item
 
 class Header extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       phoneOpen: false,
       menuHeight: 0,
-    };
-    this.menu = React.createRef();
+    }
+    this.menu = React.createRef()
   }
 
   /*
@@ -21,20 +21,20 @@ class Header extends React.Component {
   */
 
   phoneClick = () => {
-    const phoneOpen = !this.state.phoneOpen;
+    const phoneOpen = !this.state.phoneOpen
     this.setState({
       phoneOpen,
       menuHeight: phoneOpen ? this.menu.current.dom.scrollHeight : 0,
-    });
-  };
+    })
+  }
 
   render() {
-    const { ...props } = this.props;
-    const { dataSource, isMobile } = props;
-    delete props.dataSource;
-    delete props.isMobile;
-    const { menuHeight, phoneOpen } = this.state;
-    const navData = dataSource.Menu.children;
+    const { ...props } = this.props
+    const { dataSource, isMobile } = props
+    delete props.dataSource
+    delete props.isMobile
+    const { menuHeight, phoneOpen } = this.state
+    const navData = dataSource.Menu.children
     const navChildren = Object.keys(navData).map((key, i) => (
       <Item key={i.toString()} {...navData[key]}>
         <a
@@ -45,31 +45,36 @@ class Header extends React.Component {
           {navData[key].a.children}
         </a>
       </Item>
-    ));
+    ))
     return (
       <TweenOne
         component="header"
-        animation={{ opacity: 0, type: 'from' }}
+        animation={{ opacity: 0, type: "from" }}
         {...dataSource.wrapper}
         {...props}
       >
         <div
           {...dataSource.page}
-          className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
+          className={`${dataSource.page.className}${phoneOpen ? " open" : ""}`}
         >
           <TweenOne
-            animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
+            animation={{ x: -30, type: "from", ease: "easeOutQuad" }}
             {...dataSource.logo}
           >
             <a href="/">
-              <img width="100%" src={logo} alt="img" style={{ marginBottom: '0px', height: '51px', width: '51px' }} />
+              <img
+                width="100%"
+                src={logo}
+                alt="img"
+                style={{ marginBottom: "0px", height: "51px", width: "51px" }}
+              />
             </a>
           </TweenOne>
           {isMobile && (
             <div
               {...dataSource.mobileMenu}
               onClick={() => {
-                this.phoneClick();
+                this.phoneClick()
               }}
             >
               <em />
@@ -79,22 +84,22 @@ class Header extends React.Component {
           )}
           <TweenOne
             {...dataSource.Menu}
-            animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
+            animation={{ x: 30, type: "from", ease: "easeOutQuad" }}
             ref={this.menu} // {(c) => { this.menu = c; }}
             style={isMobile ? { height: menuHeight } : null}
           >
             <Menu
-              mode={isMobile ? 'inline' : 'horizontal'}
-              defaultSelectedKeys={['0']}
-              theme={isMobile ? 'dark' : 'default'}
+              mode={isMobile ? "inline" : "horizontal"}
+              defaultSelectedKeys={["0"]}
+              theme={isMobile ? "dark" : "default"}
             >
               {navChildren}
             </Menu>
           </TweenOne>
         </div>
       </TweenOne>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header
