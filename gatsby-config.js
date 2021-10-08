@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Олуулаа | Oluulaa`,
-    description: `Олуулаа | Oluulaa is a collaborative platform with a mission to connect and invigorate the Mongolian community members.`,
+    title: `MITPU`,
+    description: `MITPU is a collaborative platform with a mission to connect and invigorate the Mongolian community members.`,
     author: `@tuguscript`,
   },
   plugins: [

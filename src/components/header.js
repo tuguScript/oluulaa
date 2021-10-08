@@ -1,7 +1,7 @@
 import React from "react"
 import TweenOne from "rc-tween-one"
 import { Menu } from "antd"
-import logo from "../images/oluulaa-logo.png"
+import logo from "../images/mitpu_logo.png"
 const Item = Menu.Item
 
 class Header extends React.Component {
@@ -66,7 +66,7 @@ class Header extends React.Component {
                 width="100%"
                 src={logo}
                 alt="img"
-                style={{ marginBottom: "0px", height: "51px", width: "51px" }}
+                style={{ marginBottom: "0px", height: "51px" }}
               />
             </a>
           </TweenOne>
